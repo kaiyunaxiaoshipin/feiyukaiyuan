@@ -1,0 +1,34 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Settlevotes/index')}">列表</a></li>
+			<li class="active"><a>结算记录</a></li>
+		</ul>
+        <form class="well form-search" method="post" action="">
+            {$userinfo['role']} {$userinfo['user_nicename']}
+		</form>	
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<th>结算时间段</th>
+					<th>结算金额(元)</th>
+					<th>结算时间</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="lists" item="vo">
+				<tr>
+					<td>{$vo.time_slot}</td>
+					<td>{$vo.votes}</td>
+					<td>{:date("Y-m-d H:i:s",$vo['addtime'])}</td>
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

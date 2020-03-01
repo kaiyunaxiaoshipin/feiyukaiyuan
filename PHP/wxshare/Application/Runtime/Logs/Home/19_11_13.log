@@ -1,0 +1,45 @@
+[ 2019-11-13T21:17:13+08:00 ] 183.3.255.28 /wxshare/index.php/Share/show?roomnum=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001477s ]
+NOTIC: [2048] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/live.yishism.com/wxshare/Application/Home/Controller/ShareController.class.php 第 639 行.
+SQL: SHOW COLUMNS FROM `cmf_users_live` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`user_nicename`,`avatar`,`avatar_thumb`,`sex`,`signature`,`consumption`,`votestotal`,`province`,`city`,`birthday`,`issuper` FROM `cmf_users` WHERE ( id='6' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: level_a /www/wwwroot/live.yishism.com/wxshare/Application/Common/Common/function.php 第 214 行.
+SQL: SHOW COLUMNS FROM `cmf_users_vip` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `cmf_users_vip` WHERE ( uid=6 and endtime>1573651033 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cmf_liang` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cmf_liang` WHERE ( uid=6 and status=1 and state=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`islive`,`stream`,`pull`,`isvideo`,`type`,`goodnum`,`wy_cid` FROM `cmf_users_live` WHERE ( uid='6' and islive='1' ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: userinfo /www/wwwroot/live.yishism.com/wxshare/Application/Home/Controller/ShareController.class.php 第 96 行.
+NOTIC: [8] Undefined variable: userinfo /www/wwwroot/live.yishism.com/wxshare/Application/Home/Controller/ShareController.class.php 第 97 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000855s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002136s ]
+
+[ 2019-11-13T21:17:15+08:00 ] 183.3.255.28 /wxshare/index.php/Share/wxLogin?roomnum=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [2048] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/live.yishism.com/wxshare/Application/Home/Controller/ShareController.class.php 第 639 行.
+NOTIC: [8] A session had already been started - ignoring session_start() /www/wwwroot/live.yishism.com/wxshare/Application/Home/Controller/ShareController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004467s ]
+

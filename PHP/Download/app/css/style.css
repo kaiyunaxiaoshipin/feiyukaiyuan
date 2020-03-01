@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #fbafaf;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+    color: #999;
+}
+
+/*-- //Reset Code --*/
+
+.main-row h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+}
+
+/* frame */
+
+.frame-border {
+    width: 360px;
+    height: 765px;
+    outline: none;
+    border: solid 20px #000;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -o-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-bottom: solid 80px #000;
+    border-top: solid 60px #000;
+}
+
+.main_frame.second {
+    background-color: rgba(255, 255, 255, 0.36);
+    padding: 5px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -o-border-radius: 45px;
+    -ms-border-radius: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    height: 770px;
+    position: relative;
+}
+
+.circle-button {
+    height: 40px;
+    width: 40px;
+    /* width: 10%; */
+    background: #2b2b2b;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 2.5%;
+    left: 45%;
+}
+
+/*--status-bar--*/
+
+.copy-right {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.copy-right p {
+    color: #fff;
+}
+
+.copy-right p a {
+    color: #fff;
+    text-align: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.phn-status-bar {
+    padding: 5px 0;
+}

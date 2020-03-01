@@ -1,0 +1,30 @@
+[ 2019-10-16T23:20:09+08:00 ] 110.187.133.214 /wxshare/index.php/Share/show?roomnum=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+NOTIC: [2048] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/accountfaka.xyz/wxshare/Application/Home/Controller/ShareController.class.php 第 639 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'yunbao6sql'@'localhost' (using password: YES)
+
+[ 2019-10-16T23:20:26+08:00 ] 42.236.10.106 /wxshare/index.php/Share/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [2048] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/accountfaka.xyz/wxshare/Application/Home/Controller/ShareController.class.php 第 639 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'yunbao6sql'@'localhost' (using password: YES)
+
+[ 2019-10-16T23:20:48+08:00 ] 42.236.10.117 /wxshare/index.php/Share/show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003814s ]
+NOTIC: [2048] Declaration of Home\Controller\ShareController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /www/wwwroot/accountfaka.xyz/wxshare/Application/Home/Controller/ShareController.class.php 第 639 行.
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'yunbao6sql'@'localhost' (using password: YES)
+

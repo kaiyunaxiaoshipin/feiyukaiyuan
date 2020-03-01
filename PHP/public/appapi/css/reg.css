@@ -1,0 +1,123 @@
+.reg{
+    background:#fff;
+}
+.reg .reg_logo{
+    padding:44px 0 40px 0;
+    text-align:center;
+}
+.reg .reg_logo .reg_logo_img{
+    
+}
+.reg .reg_logo .reg_logo_img img{
+    width:70px;
+    height:70px;
+}
+.reg .reg_logo .reg_logo_name{
+    line-height:40px;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+.reg .reg_logo .reg_logo_name:after{
+    position:absolute;
+    left:50%;
+    margin-left:-15px;
+    display:block;
+    content:'';
+    width:30px;
+    height:4px;
+    border-radius:5px;
+    background:#ffdd00;
+}
+.reg .reg_ul{
+    padding:0 20px;
+}
+.reg .reg_ul ul{}
+.reg .reg_ul ul li{
+    position:relative;
+    padding:10px 10px 10px 40px;
+    /* display: -webkit-flex; */ /* Safari */
+    /* display: flex; */
+    
+    border-bottom:1px solid #f0f0f0;
+    background-position:5px center;
+    background-repeat:no-repeat;
+    background-size:24px;
+}
+.reg .reg_ul ul li.reg_ul_l{
+    background-image:url('../images/reg/userphone.png');
+}
+.reg .reg_ul ul li.reg_ul_c{
+    background-image:url('../images/reg/usercode.png');
+    padding-right:110px;
+}
+.reg .reg_ul ul li.reg_ul_p{
+    background-image:url('../images/reg/userpass.png');
+}
+.reg .reg_ul ul li input{
+    /* flex:1 1 auto; */
+    height:40px;
+    line-height:40px;
+    font-size:1.6rem;
+    border:none;
+}
+.reg .reg_ul ul li input::-webkit-input-placeholder {
+/* WebKit browsers */
+color: #c8c8c8;
+}
+.reg .reg_ul ul li input:-moz-placeholder {
+/* Mozilla Firefox 4 to 18 */
+color: #c8c8c8;
+}
+.reg .reg_ul ul li input::-moz-placeholder {
+/* Mozilla Firefox 19+ */
+color: #c8c8c8;
+}
+.reg .reg_ul ul li input:-ms-input-placeholder {
+/* Internet Explorer 10+ */
+color: #c8c8c8;
+}
+.reg .reg_ul ul li input#getCode{
+    /* flex:0 0 auto; */
+    position:absolute;
+    top:10px;
+    right:0;
+    width:100px;
+    text-align:right;
+    color:#c8c8c8;
+}
+.reg .reg_bottom{
+    position:relative;
+    padding-top:61.133%;
+    background:url('../images/reg/bottom_bg.png') no-repeat center bottom;
+    background-size:100%;
+}
+.reg .reg_bottom .reg_bottom_btn{
+    position:absolute;
+    top:20px;
+    left:10%;
+    width:80%;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#fff;
+    font-size:1.6rem;
+    
+    background:#ffdd00;
+    border-radius:20px;
+}
+.reg .reg_bottom .reg_bottom_btn.reg_bottom_wx{
+    display:none;
+    top:80px;
+    background:#50d12d;
+}
+.reg .reg_bottom .reg_bottom_wx i{
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-70px;
+    width:30px;
+    height:40px;
+    background:url('../images/reg/wx.png') no-repeat center center;
+    background-size:25px;
+    
+}

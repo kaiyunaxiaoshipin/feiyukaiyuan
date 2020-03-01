@@ -1,0 +1,50 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Proxy/index')}">列表</a></li>
+			<li class="active"><a>添加</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Proxy/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">用户名</label>
+					<div class="controls">
+						<input type="text" name="user_login">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">密码</label>
+					<div class="controls">
+						<input type="password" name="user_pass">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">昵称</label>
+					<div class="controls">
+						<input type="text" name="user_nicename">
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">邮箱</label>
+					<div class="controls">
+						<input type="text" name="user_email">
+					</div>
+				</div>
+				<div class="control-group" style="display:none;">
+					<label class="control-label">角色</label>
+					<div class="controls">
+						<label class="checkbox inline"><input value="6" type="checkbox" name="role_id[]" checked>代理商</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="{:U('Proxy/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

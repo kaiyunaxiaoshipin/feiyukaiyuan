@@ -1,0 +1,55 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Settlevotes/index')}">列表</a></li>
+            <li class="active"><a>结算列表</a></li>
+		</ul>
+        <form class="well form-search" name="form1" method="post" action="{:U('Settlevotes/index2')}">
+            {$userinfo['role']} {$userinfo['user_nicename']} 
+            &nbsp; &nbsp;
+            <input type="hidden" name="id" value="{$formget.id}">
+			时间段： 
+			<input type="text" name="start_time" class="js-date date" value="{$formget.start_time}" style="width: 80px;" autocomplete="off">-
+			<input type="text" class="js-date date" name="end_time" value="{$formget.end_time}" style="width: 80px;" autocomplete="off"> &nbsp; &nbsp;
+			<input type="submit" class="btn btn-primary" value="搜索">
+			<input type="button" class="btn btn-primary" style="background-color: #1dccaa;" value="结算当前时间段" onclick="form1.action='{:U('Settlevotes/setSettle')}';form1.submit();"/>
+            <br>
+            <br>
+            总收益：{$data['total_votes']} &nbsp; &nbsp; 未结算收益： {$data['total_votes_no']} &nbsp; &nbsp;已结算收益： {$data['total_votesed']}
+		</form>	
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+
+					<th>日期</th>
+					<th>总收益</th>
+					<th>结算状态</th>
+					<th>结算时间</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="lists" item="vo">
+				<tr>
+
+					<td>{:date("Y-m-d",$vo['date'])}</td>
+					<td>{$vo.votes}</td>
+					<td>{$status[$vo['status']]}</td>
+					<td>
+                        <if condition="$vo['status'] eq 1">
+                            {:date("Y-m-d H:i:s",$vo['uptime'])}
+                        <else/>
+                            {$status[$vo['status']]}
+                        </if>
+                    </td>
+
+				</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="pagination">{$page}</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

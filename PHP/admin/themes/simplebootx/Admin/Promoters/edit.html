@@ -1,0 +1,71 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Promoters/index')}">列表</a></li>
+			<li class="active"><a>编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Promoters/edit_post')}">
+			<fieldset>
+                <if condition="$isshow">
+				<div class="control-group">
+					<label class="control-label">代理商</label>
+					<div class="controls">
+                        <select name="one_id">
+                            <option value="">请选择</option>
+                            <volist name="proxys" id="v">
+                            <option value="{$v['id']}" <if condition="$v['id'] eq $proxyinfo['one_id']">selected</if> >{$v['user_nicename']}</option>
+                            </volist>
+                        </select>
+					</div>
+				</div>
+                </if>
+				<div class="control-group">
+					<label class="control-label">用户名</label>
+					<div class="controls">
+						<input type="text" name="user_login" value="{$user_login}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">密码</label>
+					<div class="controls">
+						<input type="password" name="user_pass" value="" placeholder="******">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">昵称</label>
+					<div class="controls">
+						<input type="text" name="user_nicename" value="{$user_nicename}">
+					</div>
+				</div>
+                <div class="control-group">
+					<label class="control-label">邮箱</label>
+					<div class="controls">
+						<input type="text" name="user_email" value="{$user_email}">
+					</div>
+				</div>
+                
+                <div class="control-group">
+					<label class="control-label">推广码</label>
+					<div class="controls">
+						<input type="text" name="user_activation_key" value="{$user_activation_key}" readonly>
+					</div>
+				</div>
+				<div class="control-group" style="display:none;">
+					<label class="control-label">角色</label>
+					<div class="controls">
+						<label class="checkbox inline"><input value="7" type="checkbox" name="role_id[]" checked>推广员</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$id}" />
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				<a class="btn" href="{:U('Promoters/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>
