@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 27
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //socket.io
+    compile('io.socket:socket.io-client:1.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //金山播放和推流SDK
+    compile 'com.ksyun.media:libksylive-java:3.0.4'
+    compile 'com.ksyun.media:libksylive-armv7a:3.0.4'
+    compile 'com.ksyun.media:libksylive-arm64:3.0.4'
+    //common
+    compile project(':common')
+    //游戏
+    compile project(':game')
+    //极光 推送,IM
+    compile project(':im')
+    //萌颜
+    compile project(':beauty')
+}

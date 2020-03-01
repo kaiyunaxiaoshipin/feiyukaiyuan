@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PokerView">
+        <attr name="pv_coverSrc" format="reference"/>
+        <attr name="pv_count" format="integer"/>
+        <attr name="pv_arrow" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="pv_rate" format="float"/>
+        <attr name="pv_hasTriangle" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="GameBetCoinView">
+        <attr name="gbc_name" format="string"/>
+        <attr name="gbc_textColor" format="color"/>
+        <attr name="gbc_textSize" format="dimension"/>
+        <attr name="gbc_marginTop1" format="dimension"/>
+        <attr name="gbc_marginTop2" format="dimension"/>
+        <attr name="gbc_marginTop3" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="PanRootView">
+        <attr name="prv_deltaHeight" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="ZpBetView">
+        <attr name="zbv_src" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            keyAlias 'key0'
+            keyPassword 'joker666'
+            storeFile file('../feiyu.jks')
+            storePassword 'joker666'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.feiyu.phonelive"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 27
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //直播
+    compile project(':main')
+    //短视频
+    compile project(':video')
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+}

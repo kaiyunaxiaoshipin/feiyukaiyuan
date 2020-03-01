@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="beauty">美颜</string>
+    <string name="beauty_shape">美型</string>
+    <string name="meng">萌颜</string>
+    <string name="filter">滤镜</string>
+    <string name="shake">抖动</string>
+    <string name="haha">哈哈镜</string>
+    <string name="haha_1">外星人</string>
+    <string name="haha_4">方方脸</string>
+    <string name="haha_3">瘦瘦脸</string>
+    <string name="haha_2">梨梨脸</string>
+    <string name="beauty_meibai">美白</string>
+    <string name="beauty_mopi">磨皮</string>
+    <string name="beauty_baohe">饱和</string>
+    <string name="beauty_fengnen">粉嫩</string>
+    <string name="beauty_hongrun">红润</string>
+    <string name="beauty_big_eye">大眼</string>
+    <string name="beauty_face">瘦脸</string>
+    <string name="tiezhi_download_failed">贴纸下载失败</string>
+</resources>

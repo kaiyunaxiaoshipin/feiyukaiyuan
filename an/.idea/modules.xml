@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidu/baidu.iml" filepath="$PROJECT_DIR$/baidu/baidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beauty/beauty.iml" filepath="$PROJECT_DIR$/beauty/beauty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/game/game.iml" filepath="$PROJECT_DIR$/game/game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/im/im.iml" filepath="$PROJECT_DIR$/im/im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/live/live.iml" filepath="$PROJECT_DIR$/live/live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mob/mob.iml" filepath="$PROJECT_DIR$/mob/mob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phonelive-demo-jinShan-refactor-2019.iml" filepath="$PROJECT_DIR$/phonelive-demo-jinShan-refactor-2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phonelive-js-demo-4.26.iml" filepath="$PROJECT_DIR$/phonelive-js-demo-4.26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/video/video.iml" filepath="$PROJECT_DIR$/video/video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yunbao6androidmh.iml" filepath="$PROJECT_DIR$/yunbao6androidmh.iml" />
+    </modules>
+  </component>
+</project>

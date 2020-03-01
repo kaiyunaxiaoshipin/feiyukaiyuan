@@ -1,0 +1,151 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.feiyu.im">
+
+
+    <!--接三方的时候,修改这里的包名-->
+    <permission
+        android:name="com.feiyu.phonelive.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <!--接三方的时候,修改这里的包名-->
+    <uses-permission android:name="com.feiyu.phonelive.permission.JPUSH_MESSAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name="com.feiyu.im.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="com.feiyu.im.activity.SystemMessageActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.feiyu.im.activity.ChatRoomActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            />
+        <activity
+            android:name="com.feiyu.im.activity.LocationActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.feiyu.im.activity.ChatChooseImageActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.feiyu.phonelive"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.feiyu.phonelive"/>
+            </intent-filter>
+
+        </service>
+
+
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.feiyu.phonelive"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="cn.jpush.im.android.helpers.IMReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <provider
+            android:name="cn.jpush.android.service.DataProvider"
+            android:authorities="com.feiyu.phonelive.DataProvider"
+            android:exported="true"/>
+
+        <provider
+            android:name="cn.jpush.im.android.helpers.ipc.IMProvider"
+            android:authorities="com.feiyu.phonelive.IMProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name="cn.jpush.android.service.DownloadProvider"
+            android:authorities="com.feiyu.phonelive.DownloadProvider"
+            android:exported="true"
+            />
+
+        <!--极光推送-->
+        <receiver
+            android:name="com.feiyu.im.receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+
+                <category android:name="com.feiyu.phonelive"/>
+            </intent-filter>
+        </receiver>
+        <!--极光推送 end-->
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <!--接三方的时候,修改这里的APP_KEY-->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="${jpushAppKey}"/>
+    </application>
+</manifest>

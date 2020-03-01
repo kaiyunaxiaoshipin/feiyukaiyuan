@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_ebb"
+        >
+
+        <View
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_game_ebb_cover"
+            android:visibility="invisible"
+            />
+
+        <com.feiyu.game.custom.GameEbbView
+            android:id="@+id/role_1"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/role_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <com.feiyu.game.custom.GameEbbView
+                android:id="@+id/role_2"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <com.feiyu.game.custom.GameEbbView
+                android:id="@+id/role_3"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/count_down_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:background="@mipmap/icon_ebb_countdown"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="250dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bg_game_tip"
+            android:gravity="center"
+            android:text="@string/game_wait_start"
+            android:textColor="@color/global"
+            android:textSize="14sp"
+            android:visibility="visible"
+            />
+
+
+        <TextView
+            android:id="@+id/count_down_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout="@layout/game_view_bet"
+        />
+
+</LinearLayout>

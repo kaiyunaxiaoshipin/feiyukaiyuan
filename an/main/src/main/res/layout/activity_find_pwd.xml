@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_reg_phone"
+                />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="@string/reg_input_phone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_reg_code"
+                />
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/reg_input_code"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:onClick="registerClick"
+                android:text="@string/reg_get_code"
+                android:textColor="@color/reg_btn_code"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_reg_pwd"
+                />
+
+            <EditText
+                android:id="@+id/edit_pwd_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="@string/reg_input_pwd_1"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_reg_pwd"
+                />
+
+            <EditText
+                android:id="@+id/edit_pwd_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:hint="@string/reg_input_pwd_2"
+                android:inputType="textPassword"
+                android:maxLength="11"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line2"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn"
+        android:enabled="false"
+        android:gravity="center"
+        android:onClick="registerClick"
+        android:text="@string/find_pwd_find"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+</LinearLayout>

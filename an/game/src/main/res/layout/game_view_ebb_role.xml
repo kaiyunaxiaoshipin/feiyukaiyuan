@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/icon_ebb_role"
+                android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/bk_left"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/icon_ebb_bk"
+        />
+
+    <ImageView
+        android:id="@+id/bk_right"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/bk_left"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/icon_ebb_bk"
+        />
+
+    <TextView
+        android:id="@+id/coin_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/coin_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/global"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_ebb_result_01"
+        android:visibility="invisible"
+        />
+
+    <View
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_game_ebb_cover"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

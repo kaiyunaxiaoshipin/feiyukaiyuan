@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RadioGroup
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_black"
+        android:orientation="horizontal"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_beauty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/beauty"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/btn_hide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"/>
+
+    <LinearLayout
+        android:id="@+id/group_beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+        >
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_meibai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_meibai"
+            />
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_mopi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_mopi"
+            />
+
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_hongrun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progressVal="0"
+            app:text2="@string/beauty_hongrun"
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/group_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="invisible"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/filter_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

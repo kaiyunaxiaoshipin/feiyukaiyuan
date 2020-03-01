@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.feiyu.game.custom.LuckPanWrap
+            android:id="@+id/wrap"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+            <com.feiyu.game.custom.LuckPanWrap2
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+                <FrameLayout
+                    android:id="@+id/pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bg_zp"
+                    >
+
+                    <com.feiyu.game.custom.LuckPanView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/light"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_zp_light_1"
+                    />
+
+                <ImageView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_zp_zhizheng"
+                    android:translationY="-5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/go"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_zp_go"
+                    android:translationY="-30dp"
+                    />
+            </com.feiyu.game.custom.LuckPanWrap2>
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="250dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/bg_game_tip"
+                android:gravity="center"
+                android:text="@string/game_wait_start"
+                android:textColor="@color/global"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/count_down_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                />
+
+
+        </com.feiyu.game.custom.LuckPanWrap>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/wrap"
+            android:layout_marginBottom="-2dp"
+            android:background="@mipmap/icon_zp_ban"
+            android:orientation="horizontal"
+            >
+
+            <com.feiyu.game.custom.ZpBetView
+                android:id="@+id/role_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zbv_src="@mipmap/icon_zp_1"
+                />
+
+            <com.feiyu.game.custom.ZpBetView
+                android:id="@+id/role_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zbv_src="@mipmap/icon_zp_2"
+                />
+
+            <com.feiyu.game.custom.ZpBetView
+                android:id="@+id/role_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zbv_src="@mipmap/icon_zp_3"
+                />
+
+            <com.feiyu.game.custom.ZpBetView
+                android:id="@+id/role_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:zbv_src="@mipmap/icon_zp_4"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/count_down_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/icon_zjh_countdown"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout="@layout/game_view_bet_zp"
+        />
+</LinearLayout>

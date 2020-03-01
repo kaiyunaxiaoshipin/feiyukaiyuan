@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/meteor"
+        android:layout_width="120dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_gift_prize_pool_3"
+        android:translationX="-120dp"
+        android:translationY="-120dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/win_view"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        >
+
+        <ImageView
+            android:id="@+id/guang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_gift_prize_pool_1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="45dp"
+            android:background="@mipmap/icon_gift_prize_pool_2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="45dp"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textColor="@color/global"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

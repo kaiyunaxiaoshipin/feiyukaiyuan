@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RadioGroup
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_black"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/btn_beauty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/beauty"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_beauty_shape"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/beauty_shape"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_meng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/meng"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_rock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/shake"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#969696"
+            />
+
+
+        <RadioButton
+            android:id="@+id/btn_haha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_beauty"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/haha"
+            android:textColor="@color/fg_btn_beauty"
+            android:textSize="14sp"
+            />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/btn_hide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"/>
+
+    <LinearLayout
+        android:id="@+id/group_beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+        >
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_meibai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_meibai"
+            />
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_mopi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_mopi"
+            />
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_baohe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_baohe"
+            />
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_fengnen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progressVal="0"
+            app:text2="@string/beauty_fengnen"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_beauty_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="invisible"
+        >
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_big_eye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_big_eye"
+            />
+
+        <com.feiyu.beauty.custom.TextSeekBar
+            android:id="@+id/seek_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:progressVal="0"
+            app:text2="@string/beauty_face"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_meng"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="invisible"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tiezhi_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/group_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:visibility="invisible"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/filter_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/group_rock"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:visibility="invisible"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rock_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/group_haha"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_above="@id/bottom"
+        android:background="@color/bg_black"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="invisible"
+        >
+
+        <com.feiyu.beauty.custom.MyRadioButton
+            android:id="@+id/btn_haha_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_haha"
+            android:button="@null"
+            android:checked="true"
+            android:paddingTop="20dp"
+            app:mr_top_drawable1="@mipmap/icon_none"
+            app:mr_top_drawableSize1="40dp"
+            />
+
+        <com.feiyu.beauty.custom.MyRadioButton
+            android:id="@+id/btn_haha_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_haha"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:text="@string/haha_1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:mr_top_drawable1="@mipmap/icon_record_haha_1"
+            app:mr_top_drawableSize1="40dp"
+            />
+
+        <com.feiyu.beauty.custom.MyRadioButton
+            android:id="@+id/btn_haha_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_haha"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:text="@string/haha_2"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:mr_top_drawable1="@mipmap/icon_record_haha_2"
+            app:mr_top_drawableSize1="40dp"
+            />
+
+        <com.feiyu.beauty.custom.MyRadioButton
+            android:id="@+id/btn_haha_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_haha"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:text="@string/haha_3"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:mr_top_drawable1="@mipmap/icon_record_haha_3"
+            app:mr_top_drawableSize1="40dp"
+            />
+
+        <com.feiyu.beauty.custom.MyRadioButton
+            android:id="@+id/btn_haha_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_haha"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:text="@string/haha_4"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:mr_top_drawable1="@mipmap/icon_record_haha_4"
+            app:mr_top_drawableSize1="40dp"
+            />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

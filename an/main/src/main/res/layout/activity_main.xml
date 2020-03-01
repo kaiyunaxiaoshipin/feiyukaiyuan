@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:id="@+id/rootView"
+    >
+
+    <com.feiyu.common.custom.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canScroll="false"
+        />
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.feiyu.common.custom.TabButtonGroup
+            android:id="@+id/tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <com.feiyu.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_checked="true"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_home_1"
+                app:tbn_text_color="@color/textColor"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_home"
+                app:tbn_unselected_icon="@mipmap/icon_main_home_0"
+                />
+
+            <com.feiyu.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_near_1"
+                app:tbn_text_color="@color/textColor"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_near"
+                app:tbn_unselected_icon="@mipmap/icon_main_near_0"
+                />
+
+            <com.feiyu.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_list_1"
+                app:tbn_text_color="@color/textColor"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_list"
+                app:tbn_unselected_icon="@mipmap/icon_main_list_0"
+                />
+
+            <com.feiyu.common.custom.TabButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:tbn_icon_size="26dp"
+                app:tbn_selected_icon="@mipmap/icon_main_me_1"
+                app:tbn_text_color="@color/textColor"
+                app:tbn_text_size="11sp"
+                app:tbn_tip="@string/main_me"
+                app:tbn_unselected_icon="@mipmap/icon_main_me_0"
+                />
+
+        </com.feiyu.common.custom.TabButtonGroup>
+
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:onClick="mainClick"
+            android:src="@mipmap/icon_main_start"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

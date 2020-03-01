@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_dialog"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <FrameLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="#000"
+            >
+
+            <com.tencent.rtmp.ui.TXCloudVideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/video_pub_des_tip"
+                android:maxLength="50"
+                android:textColor="@color/gray1"
+                android:textColorHint="@color/gray3"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="0/50"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.feiyu.common.custom.DrawableTextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_dialog"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/gray3"
+        android:textSize="14sp"
+        app:dt_left_drawable="@mipmap/icon_video_pub_location"
+        app:dt_left_height="15dp"
+        app:dt_left_width="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/live_share_to"
+        android:textColor="@color/gray1"
+        android:textSize="14sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:overScrollMode="never"
+        />
+
+    <TextView
+        android:id="@+id/btn_pub"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="@string/video_pub_pub"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

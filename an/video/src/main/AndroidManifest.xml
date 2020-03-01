@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.feiyu.video"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name="com.feiyu.video.activity.VideoPlayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"
+            />
+        <activity
+            android:name="com.feiyu.video.activity.VideoRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"
+            />
+        <activity
+            android:name="com.feiyu.video.activity.VideoChooseActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.feiyu.video.activity.VideoEditActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.feiyu.video.activity.VideoPublishActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.feiyu.video.activity.VideoReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            />
+    </application>
+
+</manifest>

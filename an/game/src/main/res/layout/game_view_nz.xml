@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/bg_nz"
+        >
+
+        <LinearLayout
+            android:id="@+id/pokers_group"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                >
+
+                <com.feiyu.game.custom.PokerView
+                    android:id="@+id/pokers_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:pv_count="5"
+                    app:pv_coverSrc="@mipmap/icon_nz_back"
+                    app:pv_rate="0.5"
+                    />
+
+                <ImageView
+                    android:id="@+id/result_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                >
+
+                <com.feiyu.game.custom.PokerView
+                    android:id="@+id/pokers_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:pv_count="5"
+                    app:pv_coverSrc="@mipmap/icon_nz_back"
+                    app:pv_rate="0.5"
+                    />
+
+                <ImageView
+                    android:id="@+id/result_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                >
+
+                <com.feiyu.game.custom.PokerView
+                    android:id="@+id/pokers_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:pv_count="5"
+                    app:pv_coverSrc="@mipmap/icon_nz_back"
+                    app:pv_rate="0.5"
+                    />
+
+                <ImageView
+                    android:id="@+id/result_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/role_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/role_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_nz_role_left"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/name_1"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/icon_nz_role_name_left"
+                        />
+
+                    <com.feiyu.game.custom.GameBetCoinView
+                        android:id="@+id/score_1"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_nz_coin"
+                        android:visibility="gone"
+                        app:gbc_marginTop1="8dp"
+                        app:gbc_marginTop2="2dp"
+                        app:gbc_marginTop3="4dp"
+                        app:gbc_name="@string/game_nz_name_1"
+                        app:gbc_textColor="#78552e"
+                        app:gbc_textSize="12dp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/role_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_nz_role_middle"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/name_2"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/icon_nz_role_name_middle"
+                        />
+
+                    <com.feiyu.game.custom.GameBetCoinView
+                        android:id="@+id/score_2"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_nz_coin"
+                        android:visibility="gone"
+                        app:gbc_marginTop1="8dp"
+                        app:gbc_marginTop2="2dp"
+                        app:gbc_marginTop3="4dp"
+                        app:gbc_name="@string/game_nz_name_2"
+                        app:gbc_textColor="#78552e"
+                        app:gbc_textSize="12dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/role_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/icon_nz_role_right"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/name_3"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/icon_nz_role_name_right"
+                        />
+
+                    <com.feiyu.game.custom.GameBetCoinView
+                        android:id="@+id/score_3"
+                        android:layout_width="50dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_nz_coin"
+                        android:visibility="gone"
+                        app:gbc_marginTop1="8dp"
+                        app:gbc_marginTop2="2dp"
+                        app:gbc_marginTop3="4dp"
+                        app:gbc_name="@string/game_nz_name_3"
+                        app:gbc_textColor="#78552e"
+                        app:gbc_textSize="12dp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="250dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bg_game_tip"
+            android:gravity="center"
+            android:text="@string/game_wait_start"
+            android:textColor="@color/global"
+            android:textSize="14sp"
+            android:translationY="15dp"
+            />
+
+        <TextView
+            android:id="@+id/count_down_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@mipmap/icon_nz_countdown"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/count_down_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout="@layout/game_view_bet_nz"
+        />
+
+</LinearLayout>

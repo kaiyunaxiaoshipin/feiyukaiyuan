@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextSeekBar">
+        <attr name="text2" format="string"/>
+        <attr name="progressVal" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MyRadioButton">
+        <attr name="mr_drawableSize1" format="dimension"/>
+        <attr name="mr_top_drawableSize1" format="dimension"/>
+        <attr name="mr_left_drawableSize1" format="dimension"/>
+        <attr name="mr_right_drawableSize1" format="dimension"/>
+        <attr name="mr_bottom_drawableSize1" format="dimension"/>
+        <attr name="mr_top_drawable1" format="reference"/>
+        <attr name="mr_left_drawable1" format="reference"/>
+        <attr name="mr_right_drawable1" format="reference"/>
+        <attr name="mr_bottom_drawable1" format="reference"/>
+    </declare-styleable>
+</resources>

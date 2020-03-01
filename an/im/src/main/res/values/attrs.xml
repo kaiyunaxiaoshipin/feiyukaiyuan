@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleLayout">
+        <attr name="bubbleBgColor" format="color"/>
+        <attr name="bubbleRadius" format="dimension"/>
+        <attr name="arrowWidth" format="dimension"/>
+        <attr name="arrowHeight" format="dimension"/>
+        <attr name="arrowPositionY" format="dimension"/>
+        <attr name="arrowDirecrion" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ChatVoiceLayout">
+        <attr name="cvl_duration" format="integer"/>
+        <attr name="cvl_direction" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

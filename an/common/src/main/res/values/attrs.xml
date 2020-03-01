@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabButton">
+        <attr name="tbn_selected_icon" format="reference"/>
+        <attr name="tbn_unselected_icon" format="reference"/>
+        <attr name="tbn_tip" format="string"/>
+        <attr name="tbn_icon_size" format="dimension"/>
+        <attr name="tbn_text_size" format="dimension"/>
+        <attr name="tbn_text_color" format="color"/>
+        <attr name="tbn_checked" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CommonRefreshView">
+        <attr name="crv_refreshEnable" format="boolean"/>
+        <attr name="crv_loadMoreEnable" format="boolean"/>
+        <attr name="crv_emptyEnable" format="boolean"/>
+        <attr name="crv_layout" format="reference"/>
+        <attr name="crv_itemCount" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MyViewPager">
+        <attr name="canScroll" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+        <attr name="ri_ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DrawableTextView">
+        <attr name="dt_top_width" format="dimension"/>
+        <attr name="dt_top_height" format="dimension"/>
+        <attr name="dt_left_width" format="dimension"/>
+        <attr name="dt_left_height" format="dimension"/>
+        <attr name="dt_right_width" format="dimension"/>
+        <attr name="dt_right_height" format="dimension"/>
+        <attr name="dt_bottom_width" format="dimension"/>
+        <attr name="dt_bottom_height" format="dimension"/>
+        <attr name="dt_top_drawable" format="reference"/>
+        <attr name="dt_left_drawable" format="reference"/>
+        <attr name="dt_right_drawable" format="reference"/>
+        <attr name="dt_bottom_drawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout2">
+        <attr name="mll_span_count" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="MyFrameLayout2">
+        <attr name="mfl_ratio" format="float"/>
+        <attr name="mfl_offestY" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="MyRelativeLayout2">
+        <attr name="mrl_ratio" format="float"/>
+        <attr name="mrl_scaleX" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout3">
+        <attr name="mll_height_percent" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="MyLinearLayout4">
+        <attr name="mll4_count" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="CircleProgress">
+        <attr name="cp_stroke_width" format="dimension"/>
+        <attr name="cp_bg_color" format="color"/>
+        <attr name="cp_fg_color" format="color"/>
+        <attr name="cp_max_progress" format="float"/>
+        <attr name="cp_cur_progress" format="float"/>
+    </declare-styleable>
+</resources>

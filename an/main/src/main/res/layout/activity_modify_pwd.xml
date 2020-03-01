@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/modify_pwd_old"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/edit_old"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:hint="@string/modify_pwd_old_1"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/modify_pwd_new"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/edit_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:hint="@string/modify_pwd_new_1"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line2"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/modify_pwd_confirm"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/edit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:background="@null"
+                android:hint="@string/modify_pwd_confirm_1"
+                android:inputType="textPassword"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="@string/modify_pwd_confirm_2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+</LinearLayout>

@@ -1,0 +1,156 @@
+{
+  "stickers": [
+    {
+      "name": "maoer",
+      "dir": "maoer",
+      "category": "default",
+      "thumb": "maoerduo_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "eyestar",
+      "dir": "eyestar",
+      "category": "default",
+      "thumb": "star_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "glass",
+      "dir": "glass",
+      "category": "default",
+      "thumb": "glass_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "kisses",
+      "dir": "kisses",
+      "category": "default",
+      "thumb": "kiss_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "wife",
+      "dir": "wife",
+      "category": "default",
+      "thumb": "wife_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "cat",
+      "dir": "cat",
+      "category": "default",
+      "thumb": "cat_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "halloweeneve",
+      "dir": "halloweeneve",
+      "category": "default",
+      "thumb": "halloweeneve_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "black_cat",
+      "dir": "black_cat",
+      "category": "default",
+      "thumb": "black_cat_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "black_cloud",
+      "dir": "black_cloud",
+      "category": "default",
+      "thumb": "black_cloud_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "eyemask",
+      "dir": "eyemask",
+      "category": "default",
+      "thumb": "eyemask_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "tears",
+      "dir": "tears",
+      "category": "default",
+      "thumb": "tears_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "moustache",
+      "dir": "moustache",
+      "category": "default",
+      "thumb": "moustache_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "bride",
+      "dir": "bride",
+      "category": "default",
+      "thumb": "bride_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "flowerrabbit",
+      "dir": "flowerrabbit",
+      "category": "default",
+      "thumb": "flowerrabbit_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "cigar",
+      "dir": "cigar",
+      "category": "default",
+      "thumb": "cigar_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "devil",
+      "dir": "devil",
+      "category": "default",
+      "thumb": "devil_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "doggy",
+      "dir": "doggy",
+      "category": "default",
+      "thumb": "doggy_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "dog",
+      "dir": "dog",
+      "category": "default",
+      "thumb": "dog_icon.png",
+      "voiced": false,
+      "downloaded": false
+    },
+    {
+      "name": "winterhat",
+      "dir": "winterhat",
+      "category": "default",
+      "thumb": "winterhat_icon.png",
+      "voiced": false,
+      "downloaded": false
+    }
+  ]
+}

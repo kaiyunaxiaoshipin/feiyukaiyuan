@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.feiyu.common.custom.MyFrameLayout2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:mfl_offestY="-110dp"
+    app:mfl_ratio="0.973"
+    >
+
+    <com.feiyu.common.custom.RatioImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_list"
+        android:translationY="-110dp"
+        app:ri_ratio="0.973"
+        />
+
+    <com.feiyu.common.custom.MyRelativeLayout2
+        android:id="@+id/item_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_list_head"
+        android:translationY="-5dp"
+        app:mrl_ratio="1.64"
+        app:mrl_scaleX="0.35"
+        >
+
+        <RelativeLayout
+            android:id="@+id/data_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/wrap_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_main_list_head_1"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_1"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignBottom="@id/wrap_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wrap_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_1"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_1"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_1"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/votes_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_1"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/gray3"
+                android:textSize="12sp"
+                />
+
+            <com.feiyu.common.custom.MyRadioButton
+                android:id="@+id/btn_follow_1"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/votes_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_btn_follow"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/fg_btn_follow"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/icon_main_list_medal_1"
+            />
+    </com.feiyu.common.custom.MyRelativeLayout2>
+
+    <com.feiyu.common.custom.MyRelativeLayout2
+        android:id="@+id/item_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_list_head"
+        android:translationY="-5dp"
+        app:mrl_ratio="1.8"
+        app:mrl_scaleX="0.27"
+        >
+
+        <RelativeLayout
+            android:id="@+id/data_group_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/wrap_2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_main_list_head_2"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_2"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignBottom="@id/wrap_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wrap_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_2"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_2"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_2"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/votes_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_2"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/gray3"
+                android:textSize="12sp"
+                />
+
+            <com.feiyu.common.custom.MyRadioButton
+                android:id="@+id/btn_follow_2"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/votes_2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_btn_follow"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/fg_btn_follow"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/no_data_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@mipmap/icon_main_list_no_data"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_list_no_data_2"
+                android:textColor="@color/gray3"
+                android:textSize="14sp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/icon_main_list_medal_2"
+            />
+    </com.feiyu.common.custom.MyRelativeLayout2>
+
+    <com.feiyu.common.custom.MyRelativeLayout2
+        android:id="@+id/item_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_list_head"
+        android:translationY="-5dp"
+        app:mrl_ratio="1.8"
+        app:mrl_scaleX="0.27"
+        >
+
+        <RelativeLayout
+            android:id="@+id/data_group_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/wrap_3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/icon_main_list_head_3"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar_3"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignBottom="@id/wrap_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:scaleType="centerCrop"
+                app:riv_oval="true"
+                />
+
+            <TextView
+                android:id="@+id/name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wrap_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/gray1"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/group_3"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_below="@id/name_3"
+                android:layout_centerHorizontal="true"
+                >
+
+                <ImageView
+                    android:id="@+id/sex_3"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/level_3"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/votes_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_3"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/gray3"
+                android:textSize="12sp"
+                />
+
+            <com.feiyu.common.custom.MyRadioButton
+                android:id="@+id/btn_follow_3"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/votes_3"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_btn_follow"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/fg_btn_follow"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/no_data_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@mipmap/icon_main_list_no_data"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_list_no_data_2"
+                android:textColor="@color/gray3"
+                android:textSize="14sp"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/icon_main_list_medal_3"
+            />
+
+    </com.feiyu.common.custom.MyRelativeLayout2>
+</com.feiyu.common.custom.MyFrameLayout2>

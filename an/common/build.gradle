@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 27
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["multidex"]
+    compile files('../libs/commons-io-1.4.jar')
+    //okHttp网络请求
+    compile rootProject.ext.dependencies["okhttp"]
+    //OkGo 是对okHttp的封装
+    compile rootProject.ext.dependencies["okgo"]
+    //OkGo上传下载扩展库
+    compile rootProject.ext.dependencies["okserver"]
+    //fastJson解析json
+    compile rootProject.ext.dependencies["fastjson"]
+    //eventbus事件总线
+    compile rootProject.ext.dependencies["eventbus"]
+    //使用Glide加载图片
+    compile rootProject.ext.dependencies["glide"]
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    compile rootProject.ext.dependencies["glide-transformations"]
+    //带圆角，边框的的ImageView
+    compile rootProject.ext.dependencies["roundedimageview"]
+    //gif库，播放礼物gif用
+    compile rootProject.ext.dependencies["gif-drawable"]
+    //svga播放器
+    compile rootProject.ext.dependencies["SVGAPlayer"]
+    //七牛云存储
+    compile rootProject.ext.dependencies["qiniu-sdk"]
+    //腾讯云存储
+    compile rootProject.ext.dependencies["tencent-cosxml"]
+    //微信sdk,支付登录分享
+    compile rootProject.ext.dependencies["tencent-wechat-sdk"]
+    //腾讯bugly
+    compile rootProject.ext.dependencies["tencent-bugly"]
+    //友盟统计
+    compile rootProject.ext.dependencies["umeng-common"]
+    //友盟统计
+    compile rootProject.ext.dependencies["umeng-analytics"]
+    //图片裁剪
+    compile rootProject.ext.dependencies["ucrop"]
+    //支付宝sdk
+    compile files('libs/alipaySdk-20180601.jar')
+    //腾讯定位，地图sdk
+    compile files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    compile files('libs/TencentMapSDK_1.2.8.1.jar')
+    //下拉刷新上拉加载
+    compile rootProject.ext.dependencies["smartRefreshLayout"]
+    //ViewPager指示器
+    compile rootProject.ext.dependencies["magicIndicator"]
+    //shareSDK
+    compile project(':mob')
+    //腾讯短视频sdk
+    //compile(name: 'LiteAVSDK_Professional_5.4.6097', ext: 'aar')
+    compile files('libs/liteavsdk.jar')
+    //阿里 ARouter
+    compile rootProject.ext.dependencies["arouter"]
+    //轮播图
+    compile rootProject.ext.dependencies["banner"]
+    //鲁班
+    compile rootProject.ext.dependencies["Luban"]
+    //compile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+
+}

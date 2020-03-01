@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="120dp"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_nz_sz"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/avatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/global"
+            app:riv_border_width="1dp"
+            app:riv_oval="true"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/avatar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/avatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/global"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/group_water"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@id/avatar"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_nz_sz_coin"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/coin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/global"
+                android:textSize="12sp"
+                />
+
+            <com.feiyu.common.custom.DrawableTextView
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:gravity="center_vertical"
+                android:text="@string/game_water"
+                android:textColor="@color/global"
+                android:textSize="12sp"
+                app:dt_right_drawable="@mipmap/icon_game_arrow_right_1"
+                app:dt_right_height="12dp"
+                app:dt_right_width="12dp"
+                />
+
+
+        </LinearLayout>
+
+        <com.feiyu.game.custom.PokerView
+            android:id="@+id/pokerView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/group_water"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:pv_count="5"
+            app:pv_coverSrc="@mipmap/icon_nz_back"
+            app:pv_hasTriangle="false"
+            app:pv_rate="0.5"
+            />
+
+        <ImageView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@id/pokerView"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/pokerView"
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            />
+
+        <TextView
+            android:id="@+id/btn_sz"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/line"
+            android:gravity="center"
+            android:text="@string/game_nz_apply_sz"
+            android:textColor="@color/global"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/icon_nz_sz_star"
+        />
+</RelativeLayout>

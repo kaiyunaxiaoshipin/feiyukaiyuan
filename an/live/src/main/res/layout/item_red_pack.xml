@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        app:riv_oval="true"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/avatar"
+        android:layout_toRightOf="@id/avatar"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/avatar"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_rob"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <com.feiyu.live.custom.MyImageView
+            android:id="@+id/img"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/icon_red_pack_4"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal"
+            android:textSize="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line2"
+        />
+</RelativeLayout>
