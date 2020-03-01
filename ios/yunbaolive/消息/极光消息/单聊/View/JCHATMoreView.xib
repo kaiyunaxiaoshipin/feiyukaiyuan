@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCHATChatViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JCHATMoreView">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW3-Sc-UxH" userLabel="图片">
+                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="XW3-Sc-UxH" secondAttribute="height" multiplier="1:1" id="8M1-YN-y9d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="photoBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="bgw-Xi-u12"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-wz-A0c" userLabel="相机">
+                    <rect key="frame" x="93.5" y="0.0" width="93.5" height="93.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cameraBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="FfB-f9-GNg"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_tool_album.png" translatesAutoresizingMaskIntoConstraints="NO" id="4NW-Wm-Izz">
+                    <rect key="frame" x="23.5" y="14" width="46.5" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4NW-Wm-Izz" secondAttribute="height" multiplier="1:1" id="Xbx-Nu-aYM"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍摄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-OK-6Ag">
+                    <rect key="frame" x="125" y="66" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_tool_camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymd-Od-zFj">
+                    <rect key="frame" x="117" y="14" width="46.5" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ymd-Od-zFj" secondAttribute="height" multiplier="1:1" id="Ds3-WU-sdS"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-Xf-sgy" userLabel="语音">
+                    <rect key="frame" x="187" y="0.0" width="93.5" height="93.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickVoiceInputBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="2WH-VF-QUQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="语音输入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-Ze-P2f">
+                    <rect key="frame" x="203" y="66" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_tool_v_input.png" translatesAutoresizingMaskIntoConstraints="NO" id="BdO-is-Bo0">
+                    <rect key="frame" x="210.5" y="14" width="46.5" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BdO-is-Bo0" secondAttribute="height" multiplier="1:1" id="9Lf-bW-x1o"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM1-Oz-LCG" userLabel="位置">
+                    <rect key="frame" x="280.5" y="0.0" width="93.5" height="93.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickLoactionBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="gpS-Xx-OXE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZv-ck-nq7">
+                    <rect key="frame" x="312" y="66" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_tool_location.png" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-X0-SWq">
+                    <rect key="frame" x="304" y="14" width="46.5" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fC9-X0-SWq" secondAttribute="height" multiplier="1:1" id="B0S-F7-srA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-vZ-W6y">
+                    <rect key="frame" x="31.5" y="66" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GM1-Oz-LCG" firstAttribute="width" secondItem="XW3-Sc-UxH" secondAttribute="width" id="0Ok-J4-Qfb"/>
+                <constraint firstItem="4NW-Wm-Izz" firstAttribute="centerY" secondItem="XW3-Sc-UxH" secondAttribute="centerY" multiplier="0.8" id="1Gf-DS-vYP"/>
+                <constraint firstItem="Juz-wz-A0c" firstAttribute="centerY" secondItem="XW3-Sc-UxH" secondAttribute="centerY" id="2Cj-Af-SpR"/>
+                <constraint firstItem="BdO-is-Bo0" firstAttribute="width" secondItem="BdO-is-Bo0" secondAttribute="height" multiplier="1:1" id="2aR-Aa-Xpe"/>
+                <constraint firstItem="5Fu-vZ-W6y" firstAttribute="top" secondItem="4NW-Wm-Izz" secondAttribute="bottom" constant="5" id="3V1-ty-VtO"/>
+                <constraint firstItem="fC9-X0-SWq" firstAttribute="centerY" secondItem="BdO-is-Bo0" secondAttribute="centerY" id="5y5-nd-gx6"/>
+                <constraint firstItem="Juz-wz-A0c" firstAttribute="height" secondItem="XW3-Sc-UxH" secondAttribute="height" id="6Gx-XH-pwH"/>
+                <constraint firstItem="2dq-Ze-P2f" firstAttribute="centerX" secondItem="BdO-is-Bo0" secondAttribute="centerX" id="9ZH-DB-vad"/>
+                <constraint firstItem="ymd-Od-zFj" firstAttribute="centerX" secondItem="Juz-wz-A0c" secondAttribute="centerX" id="AV9-wc-xjV"/>
+                <constraint firstItem="fC9-X0-SWq" firstAttribute="width" secondItem="BdO-is-Bo0" secondAttribute="width" id="Dvi-M2-gb7"/>
+                <constraint firstItem="4NW-Wm-Izz" firstAttribute="width" secondItem="XW3-Sc-UxH" secondAttribute="width" multiplier="0.5" id="EMe-fW-Q1C"/>
+                <constraint firstItem="ymd-Od-zFj" firstAttribute="width" secondItem="4NW-Wm-Izz" secondAttribute="width" id="G0w-Lt-zWy"/>
+                <constraint firstItem="ymd-Od-zFj" firstAttribute="centerY" secondItem="4NW-Wm-Izz" secondAttribute="centerY" id="IzA-j1-gBE"/>
+                <constraint firstItem="Juz-wz-A0c" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.75" id="LcY-jV-Go0"/>
+                <constraint firstItem="XW3-Sc-UxH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MAK-5T-s19"/>
+                <constraint firstItem="Nh7-OK-6Ag" firstAttribute="centerX" secondItem="ymd-Od-zFj" secondAttribute="centerX" id="MIs-e4-Hbe"/>
+                <constraint firstItem="4NW-Wm-Izz" firstAttribute="centerX" secondItem="XW3-Sc-UxH" secondAttribute="centerX" id="OVE-OA-DC1"/>
+                <constraint firstItem="fC9-X0-SWq" firstAttribute="centerX" secondItem="GM1-Oz-LCG" secondAttribute="centerX" id="OqB-xO-CaH"/>
+                <constraint firstItem="BdO-is-Bo0" firstAttribute="width" secondItem="ymd-Od-zFj" secondAttribute="width" id="Qho-S4-dtX"/>
+                <constraint firstItem="BdO-is-Bo0" firstAttribute="centerY" secondItem="ymd-Od-zFj" secondAttribute="centerY" id="Rak-l0-CWr"/>
+                <constraint firstItem="XW3-Sc-UxH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.25" id="Umc-Cf-Pin"/>
+                <constraint firstItem="3ps-Xf-sgy" firstAttribute="height" secondItem="XW3-Sc-UxH" secondAttribute="height" id="XBg-yw-5dy"/>
+                <constraint firstItem="XW3-Sc-UxH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/4" id="Z6d-Qd-ud4"/>
+                <constraint firstItem="GM1-Oz-LCG" firstAttribute="centerY" secondItem="XW3-Sc-UxH" secondAttribute="centerY" id="anq-GK-sRW"/>
+                <constraint firstItem="KZv-ck-nq7" firstAttribute="centerY" secondItem="2dq-Ze-P2f" secondAttribute="centerY" id="b6V-lg-BoF"/>
+                <constraint firstItem="3ps-Xf-sgy" firstAttribute="width" secondItem="XW3-Sc-UxH" secondAttribute="width" id="bHy-Ti-1Jd"/>
+                <constraint firstItem="KZv-ck-nq7" firstAttribute="centerX" secondItem="fC9-X0-SWq" secondAttribute="centerX" id="fsO-9a-pPf"/>
+                <constraint firstItem="3ps-Xf-sgy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.25" id="fzc-N6-abo"/>
+                <constraint firstItem="2dq-Ze-P2f" firstAttribute="centerY" secondItem="Nh7-OK-6Ag" secondAttribute="centerY" id="hO5-Dg-DEq"/>
+                <constraint firstItem="3ps-Xf-sgy" firstAttribute="centerY" secondItem="XW3-Sc-UxH" secondAttribute="centerY" id="hbP-cf-Qkp"/>
+                <constraint firstItem="GM1-Oz-LCG" firstAttribute="height" secondItem="XW3-Sc-UxH" secondAttribute="height" id="n9T-BT-iCJ"/>
+                <constraint firstItem="5Fu-vZ-W6y" firstAttribute="centerX" secondItem="4NW-Wm-Izz" secondAttribute="centerX" id="nG7-Re-edI"/>
+                <constraint firstItem="ymd-Od-zFj" firstAttribute="width" secondItem="ymd-Od-zFj" secondAttribute="height" multiplier="1:1" id="nc7-nV-3Lg"/>
+                <constraint firstItem="BdO-is-Bo0" firstAttribute="centerX" secondItem="3ps-Xf-sgy" secondAttribute="centerX" id="oBu-L5-tJF"/>
+                <constraint firstItem="Nh7-OK-6Ag" firstAttribute="centerY" secondItem="5Fu-vZ-W6y" secondAttribute="centerY" id="qYB-OX-Kx2"/>
+                <constraint firstItem="Juz-wz-A0c" firstAttribute="width" secondItem="XW3-Sc-UxH" secondAttribute="width" id="qeD-XV-PvJ"/>
+                <constraint firstItem="GM1-Oz-LCG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.75" id="rs8-zQ-Phd"/>
+                <constraint firstItem="fC9-X0-SWq" firstAttribute="width" secondItem="fC9-X0-SWq" secondAttribute="height" multiplier="1:1" id="w8E-3B-RiA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cameraBtn" destination="Juz-wz-A0c" id="zjt-KI-Q3q"/>
+                <outlet property="locationBtn" destination="GM1-Oz-LCG" id="M3p-GM-Kae"/>
+                <outlet property="paisheL" destination="Nh7-OK-6Ag" id="KGd-Ww-SUe"/>
+                <outlet property="photoBtn" destination="XW3-Sc-UxH" id="zhm-tl-b8T"/>
+                <outlet property="tupianL" destination="5Fu-vZ-W6y" id="JmG-gh-nbg"/>
+                <outlet property="voiceInputBtn" destination="3ps-Xf-sgy" id="O7d-Y4-L09"/>
+                <outlet property="weizhiL" destination="KZv-ck-nq7" id="72e-cB-JXJ"/>
+                <outlet property="yuyinL" destination="2dq-Ze-P2f" id="TKo-rI-OzX"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="-180"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_tool_album.png" width="44" height="44"/>
+        <image name="chat_tool_camera.png" width="44" height="44"/>
+        <image name="chat_tool_location.png" width="44" height="44"/>
+        <image name="chat_tool_v_input.png" width="44" height="44"/>
+    </resources>
+</document>

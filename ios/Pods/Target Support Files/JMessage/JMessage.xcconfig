@@ -1,0 +1,10 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/JMessage
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/JMessage"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -l"resolv" -l"sqlite3.0" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreAudio" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "UserNotifications"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/JMessage
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

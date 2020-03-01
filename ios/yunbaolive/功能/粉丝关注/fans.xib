@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gFL-y8-Nrp" customClass="fans">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gFL-y8-Nrp" id="U29-OD-p7V">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytu-xF-fGs" userLabel="头像">
+                        <rect key="frame" x="19" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ep5-wC-gNF"/>
+                            <constraint firstAttribute="width" secondItem="Ytu-xF-fGs" secondAttribute="height" multiplier="1:1" id="gCX-gN-7AV"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="default_head"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dasdasdsad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7A-g9-bbc" userLabel="昵称">
+                        <rect key="frame" x="66" y="2" width="79" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121133131" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4N-JF-RWo" userLabel="个签">
+                        <rect key="frame" x="66" y="22.5" width="62" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.25428524297607369" green="0.3371794871794872" blue="0.24581120455408464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-iP-L0U" userLabel="性别">
+                        <rect key="frame" x="148" y="3.5" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="3T1-8c-wks"/>
+                            <constraint firstAttribute="height" constant="14" id="6eO-Zz-dQx"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7m-AE-OZJ" userLabel="级别">
+                        <rect key="frame" x="165" y="3.5" width="28" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="p7m-AE-OZJ" secondAttribute="height" multiplier="2" id="kAZ-bC-Y2m"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="47b-SF-t6v" userLabel="级别">
+                        <rect key="frame" x="196" y="3.5" width="28" height="14"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFz-hp-FhS" userLabel="关注">
+                        <rect key="frame" x="250" y="15" width="60" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="sEG-dX-gzX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        <connections>
+                            <action selector="gaunzhuBTN:" destination="gFL-y8-Nrp" eventType="touchUpInside" id="bM8-uJ-slB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ytu-xF-fGs" firstAttribute="centerY" secondItem="U29-OD-p7V" secondAttribute="centerY" id="2pv-bC-00O"/>
+                    <constraint firstItem="Z7A-g9-bbc" firstAttribute="leading" secondItem="Ytu-xF-fGs" secondAttribute="trailing" constant="7" id="3GV-3p-pmV"/>
+                    <constraint firstItem="p7m-AE-OZJ" firstAttribute="leading" secondItem="SAe-iP-L0U" secondAttribute="trailing" constant="3" id="42f-zz-RyH"/>
+                    <constraint firstItem="Z7A-g9-bbc" firstAttribute="top" secondItem="Ytu-xF-fGs" secondAttribute="top" id="5Aj-tf-uaU"/>
+                    <constraint firstItem="rFz-hp-FhS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="47b-SF-t6v" secondAttribute="trailing" constant="3" id="5Oe-X2-bel"/>
+                    <constraint firstItem="rFz-hp-FhS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j4N-JF-RWo" secondAttribute="trailing" constant="3" id="9My-6X-0HT"/>
+                    <constraint firstItem="p7m-AE-OZJ" firstAttribute="height" secondItem="SAe-iP-L0U" secondAttribute="height" id="A2e-c7-lVS"/>
+                    <constraint firstItem="SAe-iP-L0U" firstAttribute="centerY" secondItem="Z7A-g9-bbc" secondAttribute="centerY" id="Cux-g3-oSs"/>
+                    <constraint firstItem="j4N-JF-RWo" firstAttribute="leading" secondItem="Ytu-xF-fGs" secondAttribute="trailing" constant="7" id="Fey-JW-f7g"/>
+                    <constraint firstItem="rFz-hp-FhS" firstAttribute="centerY" secondItem="U29-OD-p7V" secondAttribute="centerY" id="Qoe-4E-CbT"/>
+                    <constraint firstItem="47b-SF-t6v" firstAttribute="width" secondItem="p7m-AE-OZJ" secondAttribute="width" id="S0i-cx-L2S"/>
+                    <constraint firstItem="Ytu-xF-fGs" firstAttribute="leading" secondItem="U29-OD-p7V" secondAttribute="leadingMargin" constant="3" id="Vyd-HS-gIj"/>
+                    <constraint firstItem="p7m-AE-OZJ" firstAttribute="centerY" secondItem="SAe-iP-L0U" secondAttribute="centerY" id="YB3-Ic-J2g"/>
+                    <constraint firstItem="Ytu-xF-fGs" firstAttribute="height" secondItem="U29-OD-p7V" secondAttribute="height" multiplier="4:5" id="aId-dC-CdP"/>
+                    <constraint firstItem="47b-SF-t6v" firstAttribute="centerY" secondItem="p7m-AE-OZJ" secondAttribute="centerY" id="eMm-GG-7E6"/>
+                    <constraint firstAttribute="trailing" secondItem="rFz-hp-FhS" secondAttribute="trailing" constant="10" id="ghn-W8-wmZ"/>
+                    <constraint firstItem="47b-SF-t6v" firstAttribute="height" secondItem="p7m-AE-OZJ" secondAttribute="height" id="l4t-II-LKR"/>
+                    <constraint firstItem="j4N-JF-RWo" firstAttribute="top" secondItem="SAe-iP-L0U" secondAttribute="bottom" constant="5" id="sKj-HY-I95"/>
+                    <constraint firstItem="47b-SF-t6v" firstAttribute="leading" secondItem="p7m-AE-OZJ" secondAttribute="trailing" constant="3" id="wi7-ip-mFG"/>
+                    <constraint firstItem="SAe-iP-L0U" firstAttribute="leading" secondItem="Z7A-g9-bbc" secondAttribute="trailing" constant="3" id="yMH-kL-syF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="aId-dC-CdP"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="guanzhubtn" destination="rFz-hp-FhS" id="ovj-DC-Q2k"/>
+                <outlet property="hostlevel" destination="47b-SF-t6v" id="Mp1-OK-Yje"/>
+                <outlet property="iconV" destination="Ytu-xF-fGs" id="lk4-v4-3Gw"/>
+                <outlet property="levelL" destination="p7m-AE-OZJ" id="VW1-b1-lTL"/>
+                <outlet property="nameL" destination="Z7A-g9-bbc" id="zWv-D9-QYb"/>
+                <outlet property="sexL" destination="SAe-iP-L0U" id="ZDi-9T-g6F"/>
+                <outlet property="signatureL" destination="j4N-JF-RWo" id="x5W-3D-O1f"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="197"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_head" width="290" height="290"/>
+    </resources>
+</document>

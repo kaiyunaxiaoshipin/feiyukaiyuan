@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="svr-wf-pDG" customClass="coinCell3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="svr-wf-pDG" id="RI0-Lu-Oub">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logFirst_钻石.png" translatesAutoresizingMaskIntoConstraints="NO" id="jvu-IK-7PC">
+                        <rect key="frame" x="20" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="gE5-lI-ryE"/>
+                            <constraint firstAttribute="height" constant="20" id="twr-ec-QZF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiA-CR-n1n">
+                        <rect key="frame" x="49" y="13" width="25" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <color key="textColor" red="0.38431372549019605" green="0.38823529411764707" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpO-4r-b55">
+                        <rect key="frame" x="199" y="7" width="85" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="7on-uR-Yse"/>
+                            <constraint firstAttribute="height" constant="30" id="gLK-YI-P4G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="1" green="0.78823529411764703" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="coinClick:" destination="svr-wf-pDG" eventType="touchUpInside" id="blN-xL-UNa"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvM-m8-J61">
+                        <rect key="frame" x="49" y="31" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.78823529411764703" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tiA-CR-n1n" firstAttribute="centerY" secondItem="jvu-IK-7PC" secondAttribute="centerY" id="Ar6-Fp-V6F"/>
+                    <constraint firstItem="jvu-IK-7PC" firstAttribute="leading" secondItem="RI0-Lu-Oub" secondAttribute="leading" constant="20" id="Hjb-wB-Gqg"/>
+                    <constraint firstItem="tiA-CR-n1n" firstAttribute="leading" secondItem="jvu-IK-7PC" secondAttribute="trailing" constant="9" id="Kw4-nc-snS"/>
+                    <constraint firstItem="jvu-IK-7PC" firstAttribute="centerY" secondItem="RI0-Lu-Oub" secondAttribute="centerY" id="dRk-KA-DDc"/>
+                    <constraint firstItem="rvM-m8-J61" firstAttribute="top" secondItem="tiA-CR-n1n" secondAttribute="bottom" id="ld5-EH-gOr"/>
+                    <constraint firstItem="PpO-4r-b55" firstAttribute="centerY" secondItem="RI0-Lu-Oub" secondAttribute="centerY" id="pln-qx-oUM"/>
+                    <constraint firstItem="jvu-IK-7PC" firstAttribute="top" secondItem="RI0-Lu-Oub" secondAttribute="top" constant="5" id="seX-yj-dpH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PpO-4r-b55" secondAttribute="trailing" constant="20" id="vUk-i0-zoC"/>
+                    <constraint firstItem="rvM-m8-J61" firstAttribute="leading" secondItem="tiA-CR-n1n" secondAttribute="leading" id="zFd-Sg-Lg1"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="seX-yj-dpH"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPrice" destination="PpO-4r-b55" id="iav-KD-Dgn"/>
+                <outlet property="labCoin" destination="tiA-CR-n1n" id="MDV-Vt-UBn"/>
+                <outlet property="labRemake" destination="rvM-m8-J61" id="7da-sx-SlP"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="207"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logFirst_钻石.png" width="160" height="160"/>
+    </resources>
+</document>

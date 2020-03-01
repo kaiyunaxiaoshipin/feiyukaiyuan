@@ -1,0 +1,6 @@
+framework module Pods_yunbaolive {
+  umbrella header "Pods-yunbaolive-umbrella.h"
+
+  export *
+  module * { export * }
+}

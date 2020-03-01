@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="LogFirstCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logFirst_未领取.png" translatesAutoresizingMaskIntoConstraints="NO" id="qed-ib-paz" userLabel="背景1">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-hW-xXm" userLabel="背景2">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="153"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-po-3gK">
+                        <rect key="frame" x="2" y="2" width="118" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78823529411764703" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-hl-w3T" userLabel="钻石">
+                        <rect key="frame" x="29.5" y="46" width="61" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2ha-hl-w3T" secondAttribute="height" multiplier="1:1" id="sMh-TL-EzT"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVk-be-bp9" userLabel="X20">
+                        <rect key="frame" x="0.0" y="127" width="120" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qed-ib-paz" secondAttribute="trailing" id="0BR-uT-uqm"/>
+                <constraint firstAttribute="bottom" secondItem="gVk-be-bp9" secondAttribute="bottom" constant="5" id="7MA-qG-qwT"/>
+                <constraint firstItem="2ha-hl-w3T" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.4" id="8UT-Ng-l92"/>
+                <constraint firstAttribute="trailing" secondItem="Gdi-hW-xXm" secondAttribute="trailing" id="F5T-aj-y00"/>
+                <constraint firstItem="2ha-hl-w3T" firstAttribute="centerX" secondItem="gVk-be-bp9" secondAttribute="centerX" id="OwJ-Sy-h4a"/>
+                <constraint firstItem="qed-ib-paz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VMe-Xr-cwP"/>
+                <constraint firstAttribute="bottom" secondItem="Gdi-hW-xXm" secondAttribute="bottom" id="VRD-Sf-i8z"/>
+                <constraint firstItem="Gdi-hW-xXm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zhp-t4-fdv"/>
+                <constraint firstItem="gVk-be-bp9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bpf-8F-1PJ"/>
+                <constraint firstItem="Gdi-hW-xXm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c55-og-yh7"/>
+                <constraint firstAttribute="trailing" secondItem="gVk-be-bp9" secondAttribute="trailing" id="cOA-ah-3Hs"/>
+                <constraint firstItem="qed-ib-paz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dko-7J-QPv"/>
+                <constraint firstAttribute="bottom" secondItem="qed-ib-paz" secondAttribute="bottom" id="fPY-TG-bmK"/>
+                <constraint firstItem="nqt-po-3gK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="idl-qc-u0F"/>
+                <constraint firstItem="nqt-po-3gK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="o0h-gb-4aX"/>
+                <constraint firstAttribute="trailing" secondItem="nqt-po-3gK" secondAttribute="trailing" id="sQa-jY-qwz"/>
+                <constraint firstItem="2ha-hl-w3T" firstAttribute="centerY" secondItem="Gdi-hW-xXm" secondAttribute="centerY" id="tro-lt-xW7"/>
+            </constraints>
+            <size key="customSize" width="120" height="153"/>
+            <connections>
+                <outlet property="bgIV" destination="qed-ib-paz" id="3No-Qj-EVE"/>
+                <outlet property="bgIV2" destination="Gdi-hW-xXm" id="fOR-gJ-cu5"/>
+                <outlet property="imageIV" destination="2ha-hl-w3T" id="LCp-66-QlL"/>
+                <outlet property="numL" destination="gVk-be-bp9" id="Ruw-hr-h8M"/>
+                <outlet property="titleL" destination="nqt-po-3gK" id="HXh-7K-Et2"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="36.431784107946029"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logFirst_未领取.png" width="116" height="140"/>
+    </resources>
+</document>

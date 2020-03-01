@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="0KA-8G-b75" customClass="LiveNodeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0KA-8G-b75" id="EQs-nh-gYn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真由理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPM-T3-HDS">
+                        <rect key="frame" x="19" y="11" width="46" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrJ-ix-QUQ" userLabel="xx人">
+                        <rect key="frame" x="273.5" y="17.5" width="34.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2025-02-02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-gs-gfI" userLabel="直播时间">
+                        <rect key="frame" x="19" y="41" width="65.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人看过直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSk-EK-Qjy" userLabel="看过">
+                        <rect key="frame" x="256.5" y="42" width="51.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y56-gs-gfI" firstAttribute="top" secondItem="dPM-T3-HDS" secondAttribute="bottom" constant="-1" id="6tb-gc-ocB"/>
+                    <constraint firstItem="dPM-T3-HDS" firstAttribute="top" secondItem="EQs-nh-gYn" secondAttribute="topMargin" id="BMP-AC-tK7"/>
+                    <constraint firstItem="DSk-EK-Qjy" firstAttribute="trailing" secondItem="HrJ-ix-QUQ" secondAttribute="trailing" id="BnJ-Rs-zdk"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Y56-gs-gfI" secondAttribute="bottom" constant="4.5" id="O65-L1-RNf"/>
+                    <constraint firstItem="Y56-gs-gfI" firstAttribute="leading" secondItem="EQs-nh-gYn" secondAttribute="leadingMargin" constant="3" id="TNJ-M5-irs"/>
+                    <constraint firstItem="DSk-EK-Qjy" firstAttribute="centerY" secondItem="Y56-gs-gfI" secondAttribute="centerY" id="myn-Zu-mkR"/>
+                    <constraint firstItem="HrJ-ix-QUQ" firstAttribute="centerY" secondItem="dPM-T3-HDS" secondAttribute="centerY" id="pGn-uO-5Sd"/>
+                    <constraint firstItem="dPM-T3-HDS" firstAttribute="leading" secondItem="EQs-nh-gYn" secondAttribute="leadingMargin" constant="3" id="xv6-qg-VSB"/>
+                    <constraint firstAttribute="trailing" secondItem="HrJ-ix-QUQ" secondAttribute="trailing" constant="12" id="ymu-lP-yIq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="kanguoL" destination="DSk-EK-Qjy" id="7Lu-9M-f9F"/>
+                <outlet property="labNums" destination="HrJ-ix-QUQ" id="ud0-np-Tgl"/>
+                <outlet property="labStartTime" destination="Y56-gs-gfI" id="Oxt-6U-Jje"/>
+                <outlet property="labTitle" destination="dPM-T3-HDS" id="pZd-X5-2yi"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="214"/>
+        </tableViewCell>
+    </objects>
+</document>

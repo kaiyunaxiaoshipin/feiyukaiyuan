@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AlbumVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-f6-ush" userLabel="封面">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="185"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pub_bot_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="pK0-gc-Ruh" userLabel="阴影">
+                        <rect key="frame" x="0.0" y="145" width="170" height="40"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xO-50-Gz2" userLabel="时间">
+                        <rect key="frame" x="127" y="162" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gWX-f6-ush" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6Wb-Il-PkO"/>
+                <constraint firstItem="3xO-50-Gz2" firstAttribute="trailing" secondItem="gWX-f6-ush" secondAttribute="trailing" constant="-5" id="8Lk-T6-jHs"/>
+                <constraint firstItem="3xO-50-Gz2" firstAttribute="bottom" secondItem="gWX-f6-ush" secondAttribute="bottom" constant="-5" id="ACp-yU-4w0"/>
+                <constraint firstItem="gWX-f6-ush" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="rPu-YR-afW"/>
+                <constraint firstItem="pK0-gc-Ruh" firstAttribute="width" secondItem="gWX-f6-ush" secondAttribute="width" id="s6L-Xr-kNz"/>
+                <constraint firstItem="gWX-f6-ush" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="uOa-En-EAb"/>
+                <constraint firstItem="gWX-f6-ush" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="vhB-lP-oe8"/>
+                <constraint firstItem="pK0-gc-Ruh" firstAttribute="centerX" secondItem="gWX-f6-ush" secondAttribute="centerX" id="yfP-vr-WTS"/>
+                <constraint firstItem="pK0-gc-Ruh" firstAttribute="bottom" secondItem="gWX-f6-ush" secondAttribute="bottom" id="yrL-K7-qZa"/>
+            </constraints>
+            <size key="customSize" width="170" height="185"/>
+            <connections>
+                <outlet property="coverIV" destination="gWX-f6-ush" id="YBF-lW-5it"/>
+                <outlet property="timeL" destination="3xO-50-Gz2" id="IaR-Ka-atV"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="121.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pub_bot_shadow.png" width="186" height="40"/>
+    </resources>
+</document>

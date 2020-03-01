@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" tag="1000" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="num" id="rdb-3u-hmG" customClass="userItemCell5">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdb-3u-hmG" id="7cc-qP-3nh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退出登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-wq-pkW">
+                        <rect key="frame" x="127.5" y="12" width="65.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iJy-wq-pkW" firstAttribute="centerX" secondItem="7cc-qP-3nh" secondAttribute="centerX" id="iLX-j2-KRS"/>
+                    <constraint firstItem="iJy-wq-pkW" firstAttribute="centerY" secondItem="7cc-qP-3nh" secondAttribute="centerY" id="kRZ-pq-6JI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logOutLabel" destination="iJy-wq-pkW" id="GBU-TO-i3S"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="219"/>
+        </tableViewCell>
+    </objects>
+</document>

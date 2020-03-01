@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Akh-4V-N9a" customClass="JackpotView">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jackpot_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-7x-rkU">
+                    <rect key="frame" x="0.0" y="0.0" width="243" height="213"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="W4e-7x-rkU" secondAttribute="height" multiplier="362:317" id="Ir3-pY-OgH"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZT-VW-Hk5">
+                    <rect key="frame" x="0.0" y="47" width="243" height="166"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前奖池等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um0-Rr-Liz">
+                            <rect key="frame" x="91" y="18.5" width="61.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LV.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-L5-3PR">
+                            <rect key="frame" x="101" y="46" width="41" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.8666666666666667" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsr-XK-Uxr">
+                            <rect key="frame" x="36.5" y="82.5" width="170" height="1"/>
+                            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="wzp-tm-14t"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前奖池金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kST-Hc-RHZ">
+                            <rect key="frame" x="91" y="93.5" width="61.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qp-Iq-lz9">
+                            <rect key="frame" x="81" y="112.5" width="81" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.86666666670000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logFirst_钻石.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ica-iV-hBf">
+                            <rect key="frame" x="116" y="136" width="11" height="11"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="11" id="jqM-mz-ENW"/>
+                                <constraint firstAttribute="width" constant="11" id="urE-IO-A6L"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ica-iV-hBf" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="1JW-Xf-A1r"/>
+                        <constraint firstItem="kST-Hc-RHZ" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="3iJ-bn-fwC"/>
+                        <constraint firstItem="2Qp-Iq-lz9" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" multiplier="1.5" id="63h-6E-Ce1"/>
+                        <constraint firstItem="2Qp-Iq-lz9" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="Sf7-hR-aRL"/>
+                        <constraint firstItem="dsr-XK-Uxr" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="YUJ-OM-Dum"/>
+                        <constraint firstItem="n2V-L5-3PR" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="axV-Dg-AFw"/>
+                        <constraint firstItem="n2V-L5-3PR" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" multiplier="0.7" id="c6v-9j-Eos"/>
+                        <constraint firstItem="dsr-XK-Uxr" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" id="eU0-4n-Ppl"/>
+                        <constraint firstItem="Ica-iV-hBf" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" multiplier="1.71" id="nGV-B5-hqf"/>
+                        <constraint firstItem="kST-Hc-RHZ" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" multiplier="1.2" id="pWj-HR-Idw"/>
+                        <constraint firstItem="um0-Rr-Liz" firstAttribute="centerY" secondItem="9ZT-VW-Hk5" secondAttribute="centerY" multiplier="0.3" id="whb-ES-TuG"/>
+                        <constraint firstItem="dsr-XK-Uxr" firstAttribute="width" secondItem="9ZT-VW-Hk5" secondAttribute="width" multiplier="0.7" id="x7X-k6-yty"/>
+                        <constraint firstItem="um0-Rr-Liz" firstAttribute="centerX" secondItem="9ZT-VW-Hk5" secondAttribute="centerX" id="yD4-45-79j"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-Pv-9AJ">
+                    <rect key="frame" x="233" y="8.5" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Bl7-JS-DWf"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="7.5" maxX="15" maxY="7.5"/>
+                    <state key="normal" image="Jackpot_Close.png"/>
+                    <connections>
+                        <action selector="closeBtnClick:" destination="Akh-4V-N9a" eventType="touchUpInside" id="kp5-N1-Kyw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9ZT-VW-Hk5" firstAttribute="height" secondItem="W4e-7x-rkU" secondAttribute="height" multiplier="0.78" id="4mA-Pt-IQt"/>
+                <constraint firstItem="1nF-Pv-9AJ" firstAttribute="centerY" secondItem="W4e-7x-rkU" secondAttribute="centerY" multiplier="0.22" id="7Bm-dE-yKs"/>
+                <constraint firstAttribute="trailing" secondItem="W4e-7x-rkU" secondAttribute="trailing" constant="20" id="APc-yB-1er"/>
+                <constraint firstItem="9ZT-VW-Hk5" firstAttribute="bottom" secondItem="W4e-7x-rkU" secondAttribute="bottom" id="DEE-pW-Xor"/>
+                <constraint firstItem="W4e-7x-rkU" firstAttribute="top" secondItem="Akh-4V-N9a" secondAttribute="top" id="GbI-iD-Ljs"/>
+                <constraint firstAttribute="trailing" secondItem="1nF-Pv-9AJ" secondAttribute="trailing" id="k7j-af-klS"/>
+                <constraint firstItem="1nF-Pv-9AJ" firstAttribute="leading" secondItem="W4e-7x-rkU" secondAttribute="trailing" constant="-10" id="nqa-Fb-GAX"/>
+                <constraint firstItem="9ZT-VW-Hk5" firstAttribute="trailing" secondItem="W4e-7x-rkU" secondAttribute="trailing" id="oAb-hE-5To"/>
+                <constraint firstItem="W4e-7x-rkU" firstAttribute="leading" secondItem="Akh-4V-N9a" secondAttribute="leading" id="sRU-eV-ugS"/>
+                <constraint firstItem="9ZT-VW-Hk5" firstAttribute="leading" secondItem="W4e-7x-rkU" secondAttribute="leading" id="yCS-Um-jdn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coinL" destination="2Qp-Iq-lz9" id="Zdb-6U-Fj6"/>
+                <outlet property="levelL" destination="n2V-L5-3PR" id="Q1B-mb-GXQ"/>
+            </connections>
+            <point key="canvasLocation" x="-985" y="-291"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Jackpot_Close.png" width="32" height="32"/>
+        <image name="Jackpot_back.png" width="360" height="360"/>
+        <image name="logFirst_钻石.png" width="160" height="160"/>
+    </resources>
+</document>

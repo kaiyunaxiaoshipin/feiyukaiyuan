@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageHeaderV">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="108"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-TO-KNn" userLabel="背景">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="107.5"/>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.074509803920000006" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HXD-TO-KNn" secondAttribute="height" multiplier="4:1" id="6TV-x6-AWX"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZp-Sy-dKC" userLabel="粉丝">
+                    <rect key="frame" x="0.0" y="0.0" width="107.5" height="107.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="粉丝" image="msg_fans.png"/>
+                    <connections>
+                        <action selector="clickFansBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="xMg-aN-2gO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpQ-Wo-Liq" userLabel="赞">
+                    <rect key="frame" x="108" y="0.0" width="107" height="107.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="赞" image="msg_zan.png"/>
+                    <connections>
+                        <action selector="clickZanBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Oqq-20-Eng"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjr-AQ-ysS" userLabel="@我的">
+                    <rect key="frame" x="215" y="0.0" width="107.5" height="107.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="@我的" image="msg_linkme.png"/>
+                    <connections>
+                        <action selector="clickAiTeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="EVx-Hi-N7r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-Mf-xAs" userLabel="评论">
+                    <rect key="frame" x="323" y="0.0" width="107" height="107.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="评论" image="msg_comment.png"/>
+                    <connections>
+                        <action selector="clickCommentBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="OZb-Tz-9vw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xfa-Mf-xAs" firstAttribute="height" secondItem="LZp-Sy-dKC" secondAttribute="height" id="11G-OD-KJx"/>
+                <constraint firstItem="LZp-Sy-dKC" firstAttribute="centerX" secondItem="HXD-TO-KNn" secondAttribute="centerX" multiplier="0.25" id="3YV-2h-cmH"/>
+                <constraint firstItem="HXD-TO-KNn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5HT-ws-9mv"/>
+                <constraint firstItem="LZp-Sy-dKC" firstAttribute="height" secondItem="HXD-TO-KNn" secondAttribute="height" id="87S-Db-jLM"/>
+                <constraint firstItem="HXD-TO-KNn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Gn-5v-jRn"/>
+                <constraint firstItem="XpQ-Wo-Liq" firstAttribute="centerY" secondItem="LZp-Sy-dKC" secondAttribute="centerY" id="HVI-IK-pHj"/>
+                <constraint firstItem="gjr-AQ-ysS" firstAttribute="width" secondItem="LZp-Sy-dKC" secondAttribute="width" id="LWz-H6-7iC"/>
+                <constraint firstItem="LZp-Sy-dKC" firstAttribute="centerY" secondItem="HXD-TO-KNn" secondAttribute="centerY" id="RGP-eJ-Iwh"/>
+                <constraint firstItem="XpQ-Wo-Liq" firstAttribute="centerX" secondItem="HXD-TO-KNn" secondAttribute="centerX" multiplier="0.75" id="Rdq-ax-iK2"/>
+                <constraint firstItem="xfa-Mf-xAs" firstAttribute="width" secondItem="LZp-Sy-dKC" secondAttribute="width" id="Rft-y2-CMO"/>
+                <constraint firstItem="gjr-AQ-ysS" firstAttribute="centerX" secondItem="HXD-TO-KNn" secondAttribute="centerX" multiplier="1.25" id="WLe-mf-2qu"/>
+                <constraint firstItem="xfa-Mf-xAs" firstAttribute="centerY" secondItem="LZp-Sy-dKC" secondAttribute="centerY" id="XYV-Uh-eZl"/>
+                <constraint firstItem="XpQ-Wo-Liq" firstAttribute="width" secondItem="LZp-Sy-dKC" secondAttribute="width" id="aia-Bw-HNL"/>
+                <constraint firstItem="gjr-AQ-ysS" firstAttribute="height" secondItem="LZp-Sy-dKC" secondAttribute="height" id="awd-ir-Kmc"/>
+                <constraint firstItem="XpQ-Wo-Liq" firstAttribute="height" secondItem="LZp-Sy-dKC" secondAttribute="height" id="ltt-Jh-rah"/>
+                <constraint firstItem="xfa-Mf-xAs" firstAttribute="centerX" secondItem="HXD-TO-KNn" secondAttribute="centerX" multiplier="1.75" id="oUn-xV-Aon"/>
+                <constraint firstItem="gjr-AQ-ysS" firstAttribute="centerY" secondItem="LZp-Sy-dKC" secondAttribute="centerY" id="vyG-wO-veY"/>
+                <constraint firstItem="LZp-Sy-dKC" firstAttribute="width" secondItem="HXD-TO-KNn" secondAttribute="width" multiplier="1/4" id="xIU-OX-4oA"/>
+                <constraint firstItem="HXD-TO-KNn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="zPa-HL-PaF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="aiTeBtn" destination="gjr-AQ-ysS" id="YjA-AU-1dq"/>
+                <outlet property="commentBtn" destination="xfa-Mf-xAs" id="7jg-Dd-XgU"/>
+                <outlet property="fansBtn" destination="LZp-Sy-dKC" id="wN2-J9-qDy"/>
+                <outlet property="headerBgV" destination="HXD-TO-KNn" id="3pe-Im-yUU"/>
+                <outlet property="zanBtn" destination="XpQ-Wo-Liq" id="ach-aN-5cC"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="msg_comment.png" width="46" height="46"/>
+        <image name="msg_fans.png" width="46" height="46"/>
+        <image name="msg_linkme.png" width="46" height="46"/>
+        <image name="msg_zan.png" width="46" height="46"/>
+    </resources>
+</document>

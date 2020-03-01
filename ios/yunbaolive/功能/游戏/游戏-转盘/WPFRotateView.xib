@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9di-Aw-T54" customClass="WPFRotateView">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="zp_dp1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Brg-dD-I99">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-DI-cJi">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                    <state key="normal" image="zp_dpwq.png"/>
+                    <state key="highlighted" image="zp_dpwq.png"/>
+                    <connections>
+                        <action selector="btnSelNumDidClick:" destination="9di-Aw-T54" eventType="touchUpInside" id="V5d-9T-tZ7"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F36-9v-oX6">
+                    <rect key="frame" x="123" y="94.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6nP-ly-abm"/>
+                        <constraint firstAttribute="width" constant="40" id="kd3-Pq-kHY"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="kaijiang3.png"/>
+                    <connections>
+                        <action selector="doRotation:" destination="9di-Aw-T54" eventType="touchUpInside" id="Z5A-Xu-xQ5"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deng1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yiS-zD-vIn">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jbk.9" translatesAutoresizingMaskIntoConstraints="NO" id="aFl-mh-ksf">
+                    <rect key="frame" x="0.0" y="113" width="286" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="qSh-co-C7l"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Brg-dD-I99" secondAttribute="bottom" id="08X-7g-179"/>
+                <constraint firstAttribute="trailing" secondItem="Brg-dD-I99" secondAttribute="trailing" id="FV4-Kg-1vl"/>
+                <constraint firstItem="aFl-mh-ksf" firstAttribute="centerX" secondItem="9di-Aw-T54" secondAttribute="centerX" id="KY9-Zg-zM3"/>
+                <constraint firstItem="F36-9v-oX6" firstAttribute="centerY" secondItem="9di-Aw-T54" secondAttribute="centerY" multiplier="0.8" id="Mhu-6T-sKt"/>
+                <constraint firstItem="aFl-mh-ksf" firstAttribute="width" secondItem="Brg-dD-I99" secondAttribute="width" id="Ns4-D4-I9d"/>
+                <constraint firstItem="Brg-dD-I99" firstAttribute="top" secondItem="9di-Aw-T54" secondAttribute="top" id="OwN-BJ-JOp"/>
+                <constraint firstItem="yiS-zD-vIn" firstAttribute="width" secondItem="Brg-dD-I99" secondAttribute="width" id="PoY-Iv-AfC"/>
+                <constraint firstItem="yiS-zD-vIn" firstAttribute="centerY" secondItem="Brg-dD-I99" secondAttribute="centerY" id="W5D-cC-KPl"/>
+                <constraint firstItem="yiS-zD-vIn" firstAttribute="height" secondItem="Brg-dD-I99" secondAttribute="height" id="YiI-RD-rnD"/>
+                <constraint firstItem="Brg-dD-I99" firstAttribute="leading" secondItem="9di-Aw-T54" secondAttribute="leading" id="a1a-BB-uVg"/>
+                <constraint firstItem="aFl-mh-ksf" firstAttribute="centerY" secondItem="9di-Aw-T54" secondAttribute="centerY" id="h6d-3D-Z1t"/>
+                <constraint firstItem="yiS-zD-vIn" firstAttribute="centerX" secondItem="Brg-dD-I99" secondAttribute="centerX" id="ipg-ve-evV"/>
+                <constraint firstItem="F36-9v-oX6" firstAttribute="centerX" secondItem="9di-Aw-T54" secondAttribute="centerX" id="knf-Ks-eCX"/>
+                <constraint firstItem="R9b-DI-cJi" firstAttribute="height" secondItem="Brg-dD-I99" secondAttribute="height" id="qgd-TU-JE8"/>
+                <constraint firstItem="R9b-DI-cJi" firstAttribute="width" secondItem="Brg-dD-I99" secondAttribute="width" id="ukU-J9-XTz"/>
+                <constraint firstItem="R9b-DI-cJi" firstAttribute="centerY" secondItem="9di-Aw-T54" secondAttribute="centerY" id="vIC-1q-lKT"/>
+                <constraint firstItem="R9b-DI-cJi" firstAttribute="centerX" secondItem="9di-Aw-T54" secondAttribute="centerX" id="z8e-fc-pGh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionbtn" destination="F36-9v-oX6" id="Geg-EI-wdd"/>
+                <outlet property="bgBtn" destination="aFl-mh-ksf" id="FOz-0M-xZP"/>
+                <outlet property="deng" destination="yiS-zD-vIn" id="i6n-Ph-vTF"/>
+                <outlet property="rotateWheel" destination="Brg-dD-I99" id="fSi-TS-baa"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="178"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="deng1.png" width="530" height="530"/>
+        <image name="jbk.9" width="640" height="67"/>
+        <image name="kaijiang3.png" width="155" height="62"/>
+        <image name="zp_dp1.png" width="530" height="530"/>
+        <image name="zp_dpwq.png" width="530" height="530"/>
+    </resources>
+</document>

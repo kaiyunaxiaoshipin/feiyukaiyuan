@@ -1,0 +1,225 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AliPay (2.1.2)
+  - Bugly (2.4.7)
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - CWStatusBarNotification (2.3.5)
+  - EBBannerView (1.0.8)
+  - GPUImage (0.1.7)
+  - HappyDNS (0.3.14)
+  - HPGrowingTextView (1.1)
+  - JCore (1.1.6)
+  - JMessage (3.4.0):
+    - JCore (~> 1.1.1)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
+  - libksygpulive/base (3.0.4)
+  - libksygpulive/libksygpulive (3.0.4):
+    - GPUImage
+    - libksygpulive/streamerbase
+  - libksygpulive/mediacodec (3.0.4)
+  - libksygpulive/mediacore_enc_base (3.0.4)
+  - libksygpulive/mediacore_enc_lite (3.0.4)
+  - libksygpulive/streamerbase (3.0.4):
+    - libksygpulive/base
+    - libksygpulive/mediacodec
+    - libksygpulive/mediacore_enc_base
+    - libksygpulive/mediacore_enc_lite
+    - libksygpulive/yuv
+  - libksygpulive/yuv (3.0.4)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - mob_sharesdk (4.1.4):
+    - mob_sharesdk/ShareSDK (= 4.1.4)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.1.4):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.1.4):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.1.4):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo (4.1.4):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/Twitter (4.1.4):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull (4.1.4):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.1.8)
+  - OpenSSL-for-iOS (1.0.2.d.1)
+  - Protobuf (3.6.1)
+  - QCloudCore (5.5.9)
+  - QCloudCOSXML (5.5.9):
+    - QCloudCore (= 5.5.9)
+    - QCloudCOSXML/Transfer (= 5.5.9)
+  - QCloudCOSXML/Transfer (5.5.9):
+    - QCloudCore (= 5.5.9)
+  - Qiniu (7.2.5):
+    - HappyDNS (~> 0.3)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - SSZipArchive (1.8.1)
+  - Starscream (3.1.1)
+  - SVGAPlayer (2.3.0):
+    - SVGAPlayer/Core (= 2.3.0)
+    - SVGAPlayer/ProtoFiles (= 2.3.0)
+  - SVGAPlayer/Core (2.3.0):
+    - SSZipArchive (= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.3.0):
+    - Protobuf (~> 3.4)
+  - TXLiteAVSDK_Professional (5.4.6097)
+  - UMCAnalytics (5.5.2):
+    - UMCCommon
+  - UMCCommon (1.5.3)
+  - UMCSecurityPlugins (1.0.6)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - AliPay (~> 2.1.2)
+  - Bugly (~> 2.4.6)
+  - CocoaLumberjack
+  - CWStatusBarNotification (~> 2.3.5)
+  - EBBannerView
+  - HPGrowingTextView
+  - JMessage
+  - JPush
+  - libksygpulive/libksygpulive
+  - Masonry (~> 1.0.1)
+  - MBProgressHUD
+  - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/Facebook
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo
+  - mob_sharesdk/ShareSDKPlatforms/Twitter
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull
+  - OpenSSL-for-iOS (~> 1.0.2.d.1)
+  - QCloudCOSXML
+  - Qiniu
+  - SDCycleScrollView
+  - SDWebImage (~> 3.8)
+  - Socket.IO-Client-Swift (~> 15.2.0)
+  - SVGAPlayer
+  - TXLiteAVSDK_Professional (~> 5.4.6097)
+  - UMCAnalytics
+  - UMCCommon
+  - UMCSecurityPlugins
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AliPay
+    - Bugly
+    - CocoaLumberjack
+    - CWStatusBarNotification
+    - EBBannerView
+    - GPUImage
+    - HappyDNS
+    - HPGrowingTextView
+    - JCore
+    - JMessage
+    - JPush
+    - libksygpulive
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
+    - OpenSSL-for-iOS
+    - Protobuf
+    - QCloudCore
+    - QCloudCOSXML
+    - Qiniu
+    - SDCycleScrollView
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - SSZipArchive
+    - Starscream
+    - SVGAPlayer
+    - TXLiteAVSDK_Professional
+    - UMCAnalytics
+    - UMCCommon
+    - UMCSecurityPlugins
+    - YYCache
+    - YYImage
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AliPay: 2bd35a4e486d2a8c035043023cd846e886bb21d1
+  Bugly: 2c256069145f550171907c5cb1c0f84ad291f6c1
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
+  EBBannerView: 148153c26663a8a1319b3deefc3016db7d801087
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
+  JMessage: 5c0a684b497cdfdc59e2a7871518c643a5814e19
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
+  libksygpulive: aca3eb30e7a38ee6565feb52feb82ccc0103ce43
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  mob_sharesdk: 765cc2fd2fac0a6fd7c3e6c2b10d729ad006c608
+  MOBFoundation: 7f1e157be332576e4d45809a03bc733292c6ad8d
+  OpenSSL-for-iOS: d7a30add88a1969b052135adbe48452af231ed32
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  QCloudCore: 88ca1cfc91d254b8def2641bef3e915990053f33
+  QCloudCOSXML: 806eb5b294e0d43e6c2575ec85c9cf4f304f5789
+  Qiniu: 909b408ee489ea54827e9717be90b94bc9dfbc48
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SVGAPlayer: 39ad3d16643d8c63d62bd8a3decc0de4bc9b66c4
+  TXLiteAVSDK_Professional: 3e0d9b3d7d0804bdba3f47649be5576da02782a7
+  UMCAnalytics: 6654fd3c8201ff6da5c86a3ae29cd5c8436d3b7b
+  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 7872e6b553afa400f94af5c971bd4f58c1de228a
+
+COCOAPODS: 1.7.5

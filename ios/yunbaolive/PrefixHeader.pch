@@ -1,0 +1,200 @@
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+#import "liveCity.h"
+#import "cityDefault.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+AFNetworking.h"
+#import "UIButton+WebCache.h"
+#import "SBJson.h"
+#import "AFHTTPSessionManager.h"
+#import "Config.h"
+#import "common.h"
+#import "Masonry.h"
+#import "liveCommon.h"
+#import "UIView+Additions.h"
+#import "MXBADelegate.h"
+#import "gameState.h"
+#import "UIView+ITTAdditions.h"
+#import "UIView+WPFExtension.h"
+#import <JMessage/JMessage.h>
+#import <JPUSHService.h>
+#import "YBNavi.h"
+#import "YBToolClass.h"
+#import <MJRefresh/MJRefresh.h>
+#import "YBNoWordView.h"
+#import "PublicView.h"
+#import "YBNetworking.h"
+#import "PublicObj.h"
+#import "YBNavi.h"
+#import "MyTextView.h"
+#import <SDWebImage/UIImage+GIF.h>
+#import <SDWebImage/SDWebImageManager.h>
+#import "UIViewController+hook.h"
+#import "RookieTools.h"
+#endif
+
+//正式站点域名
+#define purl @"http://live.yishism.com/api/public/"
+#define h5url @"http://live.yishism.com"
+
+
+
+#define YZMsg(key) [[RookieTools shareInstance] getStringForKey:key withTable:@"InfoPlist"]
+#define CurrentLanguage @"will_show_language"
+#define getImagename(a) [NSString stringWithFormat:@"%@_%@",a,[Config canshu]]
+#define lagType [[NSUserDefaults standardUserDefaults] objectForKey:@"will_show_language"]
+#define ZH_CN @"zh-Hans"
+
+
+//美颜切换参数 0:萌颜 1:腾讯的
+//#define isTXfiter 1
+
+//腾讯收费版SDK licence、key
+#define LicenceURL @"http://license.vod2.myqcloud.com/license/v1/a589f5ad26a98e7c93a085fa1d2bafe5/TXUgcSDK.licenc"
+#define LicenceKey @"18b492071083f295948197702122399d"
+
+//短视频录制时长控制
+#define MAX_RECORD_TIME             15
+#define MIN_RECORD_TIME             5
+
+#pragma mark 三方接入信息 注意 在info 中也要配置 QQ要配置两个（tencent+QQAppId || QQ+QQAppId的16进制 ）
+
+#define isProduction YES
+//QQ
+#define QQAppKey @"075999fa87f515a99ba1417166e73b80"
+#define QQAppId @"101551222"
+//wechat
+#define WechatAppId @"wx0bf75843cfe648b9"
+#define WechatAppSecret @"085933b2a09de4e283ef08a1a96d1e78"
+//facebook
+#define FacebookApiKey @"685742891599488"
+#define FacebookAppSecret @"64fa770a8992d8ce053421eac31e6180"
+//twitter
+#define TwitterKey @"tBacWAJAb1VlAS0ZN15vy8RQC"
+#define TwitterSecret @"IfmvJVw5cZtogIIGNnJ0r93FD6RR41lRk7dh8mTN4Br70GRnDo"
+#define TwitterRedirectUri @"http://www.yiyiya.xyz"
+//极光
+//#define JMessageAppKey @"63add18d39b011ef972e4e0d"
+#define JMessageAppKey @"76a1b6d9d3850d3957ab9a3e"
+#define JmessageName @""
+//Bugly
+#define BuglyId @"a79649223e"
+//腾讯地图key
+#define TencentKey @"FHCBZ-QEVC4-EAYUV-D7AHC-HN75Q-73B6B"
+
+//百度语音识别 "请在官网新建应用，配置包名，并在此填写应用的 api key, secret key, appid(即appcode)"
+#define ASR_API_KEY @"WDpTY8cuANIrtWBBMXGqM3b9"
+#define ASR_SECRET_KEY @"PObmhBLfmMNwcHyOexVwZDwww6iu4sWV"
+#define ASR_APP_ID @"16070074"
+
+//友盟
+#define youmengKey @"5d049a604ca357818a000c8a"
+#define youmengChannel @""
+
+//适配iphoneX
+#define iPhoneX (_window_width== 375.f && _window_height == 812.f)||(_window_width== 414.f && _window_height == 896.f)
+#define ShowDiff (iPhoneX ? 34: 0)
+#define statusbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height-20)
+
+//app主色调s
+#define normalColors [UIColor colorWithRed:255/255.0 green:211/255.0 blue:0/255.0 alpha:1]
+#define Line_Cor [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]
+
+//顶部导航栏背景色
+#define navigationBGColor [UIColor whiteColor]
+//顶部导航栏字体颜色
+#define navtionTitleColor [UIColor blackColor]
+//顶部导航栏字体字号
+#define navtionTitleFont [UIFont boldSystemFontOfSize:16]
+
+#define gameWait 8 //游戏等待时间
+
+//直播间聊天区域宽度
+#define tableWidth  _window_width*0.75 - 15
+
+#define minstr(a)    [NSString stringWithFormat:@"%@",a]
+#define YBValue(dic,key) [NSString stringWithFormat:@"%@",[dic valueForKey:key]]
+
+// 随机色
+#define WPFRandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
+
+#ifndef __OPTIMIZE__
+# define NSLog(...) NSLog(__VA_ARGS__)
+#else
+# define NSLog(...)
+#endif
+//RGB(246, 246, 246)
+
+
+#define fontThin(sizeThin) [UIFont fontWithName:@"HelveticaNeue-Thin" size:(sizeThin)]
+#define fontMT(sizeThin)   [UIFont fontWithName:@"Arial-ItalicMT" size:(sizeThin)]
+
+#define MAGIN_W ([UIScreen mainScreen].bounds.size.width / 3)
+//pageviewcontroller宽度
+#define _pageBarWidth  _window_width *0.6
+#define  _window_width  [UIScreen mainScreen].bounds.size.width
+#define _window_height [UIScreen mainScreen].bounds.size.height
+#define backColor [UIColor colorWithRed:65/255.0 green:212/255.0 blue:131/255.0 alpha:1]
+//255 211 80
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+#define FNOT [UIFont systemFontOfSize:16];
+#define leftW 35  //直播间左上角头像
+#define ios8 [[UIDevice currentDevice].systemVersion floatValue] <9
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+//首页高亮
+#define RGB(r,g,b)          [UIColor colorWithRed:(r)/255.f \
+green:(g)/255.f \
+blue:(b)/255.f \
+alpha:1.f]
+#endif
+#define RGB_COLOR(_STR_,a) ([UIColor colorWithRed:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(1, 2)] UTF8String], 0, 16)] intValue] / 255.0 green:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(3, 2)] UTF8String], 0, 16)] intValue] / 255.0 blue:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(5, 2)] UTF8String], 0, 16)] intValue] / 255.0 alpha:a])
+
+
+
+
+
+
+
+//颜色
+#define Pink_Cor normalColors
+#define Black_Cor RGB_COLOR(@"#f4f5f6",1)
+#define YBWeakSelf __weak typeof(self) weakSelf = self;
+#define CellRow_Cor Black_Cor
+#define SelCell_Col RGB_COLOR(@"#f4f5f6", 1)
+#define GrayText [UIColor colorWithRed:150/255.f green:150/255.f blue:150/255.f alpha:1.f]
+#define AtCol RGB_COLOR(@"#f2e50b", 1)
+
+//字体
+#define SYS_Font(a) [UIFont systemFontOfSize:(a)]
+
+//@规则
+#define kATRegular @"@[\\u4e00-\\u9fa5\\w\\-\\_]+ "
+//emoji规则
+#define emojiPattern @"\\[\\w+\\]"
+
+
+
+
+
+//....
+
+/* PrefixHeader_pch */

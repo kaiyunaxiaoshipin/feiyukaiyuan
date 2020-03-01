@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TiFitterCell">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DaN-8G-13f">
+                        <rect key="frame" x="0.0" y="0.0" width="84" height="122"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-c6-OwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="84" height="122"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DaN-8G-13f" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0UG-SH-cd2"/>
+                <constraint firstItem="DaN-8G-13f" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="3rl-Bw-Fg9"/>
+                <constraint firstItem="DaN-8G-13f" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="DrQ-YF-PH1"/>
+                <constraint firstItem="DaN-8G-13f" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="gyA-Bb-Vpm"/>
+                <constraint firstItem="g9d-c6-OwJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jEv-8J-UBw"/>
+                <constraint firstItem="g9d-c6-OwJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="pPQ-yL-dSI"/>
+                <constraint firstItem="g9d-c6-OwJ" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="tYM-zB-LXa"/>
+                <constraint firstItem="g9d-c6-OwJ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="u98-Vw-lEg"/>
+            </constraints>
+            <size key="customSize" width="84" height="122"/>
+            <connections>
+                <outlet property="selectImageView" destination="g9d-c6-OwJ" id="QNU-Uk-A7j"/>
+                <outlet property="thumbImageView" destination="DaN-8G-13f" id="Bvv-sQ-1KL"/>
+            </connections>
+            <point key="canvasLocation" x="164.80000000000001" y="161.01949025487258"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="filter_selected.png" width="110" height="160"/>
+    </resources>
+</document>

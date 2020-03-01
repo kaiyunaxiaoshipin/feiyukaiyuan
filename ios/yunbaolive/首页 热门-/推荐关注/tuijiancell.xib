@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="tuijiancell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game图标1" translatesAutoresizingMaskIntoConstraints="NO" id="Tfl-kX-mYS">
+                        <rect key="frame" x="27" y="10" width="81" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Tfl-kX-mYS" secondAttribute="height" id="u2Q-gG-p9X"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="关注对号" translatesAutoresizingMaskIntoConstraints="NO" id="CPM-My-E6R">
+                        <rect key="frame" x="88" y="13" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="70W-fO-51c"/>
+                            <constraint firstAttribute="height" constant="20" id="eGO-GL-Dxc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg1-xZ-shO">
+                        <rect key="frame" x="26.5" y="96" width="81" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs2-KJ-YdP">
+                        <rect key="frame" x="21.5" y="113" width="91" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yg1-xZ-shO" firstAttribute="width" secondItem="Tfl-kX-mYS" secondAttribute="width" id="0Jd-Xv-43m"/>
+                <constraint firstItem="yg1-xZ-shO" firstAttribute="top" secondItem="Tfl-kX-mYS" secondAttribute="bottom" constant="5" id="1gO-uG-wzf"/>
+                <constraint firstItem="Tfl-kX-mYS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2sV-Yb-Tjr"/>
+                <constraint firstItem="CPM-My-E6R" firstAttribute="top" secondItem="Tfl-kX-mYS" secondAttribute="top" constant="3" id="6Uz-wc-Ald"/>
+                <constraint firstItem="CPM-My-E6R" firstAttribute="trailing" secondItem="Tfl-kX-mYS" secondAttribute="trailing" id="Hi6-2p-3z5"/>
+                <constraint firstItem="Gs2-KJ-YdP" firstAttribute="top" secondItem="yg1-xZ-shO" secondAttribute="bottom" id="MKf-xf-rbb"/>
+                <constraint firstItem="Gs2-KJ-YdP" firstAttribute="centerX" secondItem="yg1-xZ-shO" secondAttribute="centerX" id="i7N-TT-FmJ"/>
+                <constraint firstItem="yg1-xZ-shO" firstAttribute="centerX" secondItem="Tfl-kX-mYS" secondAttribute="centerX" id="lDW-rr-7Uc"/>
+                <constraint firstItem="Gs2-KJ-YdP" firstAttribute="width" secondItem="yg1-xZ-shO" secondAttribute="width" constant="10" id="nGu-kN-vx2"/>
+                <constraint firstItem="Tfl-kX-mYS" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.6" id="ob2-Zq-IAg"/>
+                <constraint firstItem="Tfl-kX-mYS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ox6-vO-KRx"/>
+            </constraints>
+            <size key="customSize" width="135" height="168"/>
+            <connections>
+                <outlet property="dis" destination="Gs2-KJ-YdP" id="pja-jo-aIb"/>
+                <outlet property="duihao" destination="CPM-My-E6R" id="XcK-Og-BuM"/>
+                <outlet property="icon" destination="Tfl-kX-mYS" id="15S-rA-rX0"/>
+                <outlet property="name" destination="yg1-xZ-shO" id="2qd-aY-WG2"/>
+            </connections>
+            <point key="canvasLocation" x="-28.5" y="100"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="game图标1" width="160" height="160"/>
+        <image name="关注对号" width="200" height="200"/>
+    </resources>
+</document>
